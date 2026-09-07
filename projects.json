@@ -19,5 +19,12 @@
     "description": "Repository for the Gin-based REST API backend of velocity-bulletin.",
     "language": "Go",
     "stars": 0
+  },
+  {
+    "name": "velocity-bulletinInfra",
+    "url": "https://github.com/m161awm2/velocity-bulletinInfra",
+    "description": "This repository contains the infrastructure components for the velocity-bulletin project, implemented using IaC.",
+    "language": "GitHub",
+    "stars": 0
   }
 ]

@@ -24,7 +24,7 @@
     "name": "velocity-bulletinInfra",
     "url": "https://github.com/m161awm2/velocity-bulletinInfra",
     "description": "This repository contains the infrastructure components for the velocity-bulletin project, implemented using IaC.",
-    "language": "GitHub",
+    "language": "HCL",
     "stars": 0
   }
 ]

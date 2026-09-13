@@ -7,9 +7,9 @@
   "postCount": 20,
   "totalLikes": 22,
   "latestPost": {
-    "title": "Gin (진) 프레임워크",
-    "link": "https://velog.io/@m161awm/Gin-%EC%A7%84-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC",
-    "pubDate": "Mon, 24 Aug 2026 07:59:56 GMT"
+    "title": "NAT, VPN, Reverse/Forward Proxy 그리고 API Gateway",
+    "link": "https://velog.io/@m161awm/NAT-VPN-Reverse-Proxy-VS-Forward-Proxy",
+    "pubDate": "Sun, 13 Sep 2026 15:32:37 GMT"
   },
-  "updatedAt": "Mon, 24 Aug 2026 07:59:56 GMT"
+  "updatedAt": "Sun, 13 Sep 2026 15:32:37 GMT"
 }

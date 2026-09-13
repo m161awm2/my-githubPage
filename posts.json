@@ -1,5 +1,13 @@
 [
   {
+    "title": "NAT, VPN, Reverse/Forward Proxy 그리고 API Gateway",
+    "link": "https://velog.io/@m161awm/NAT-VPN-Reverse-Proxy-VS-Forward-Proxy",
+    "pubDate": "Sun, 13 Sep 2026 15:32:37 GMT",
+    "description": "서론 우리가 네트워크를 공부 할 때에 가장 헷갈리는 용어인 NAT, VPN, 리버스 프록시와 포워드 프록시를 알아보겠다. Network Address Translation Network Address Translation, 줄여서 NAT라고 한다. 먼저 공유기가 하는 일을 알아보면 좋다, 공유기는 CIDR이 /24 라고 치자면, 256개의 사설 IP를 가질 수 있다. 그 사설 IP가 한 공유...",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/7926ac13-6e38-43e4-92d0-1fbcfb996fcf/image.png",
+    "likes": 0
+  },
+  {
     "title": "Gin (진) 프레임워크",
     "link": "https://velog.io/@m161awm/Gin-%EC%A7%84-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC",
     "pubDate": "Mon, 24 Aug 2026 07:59:56 GMT",
@@ -149,14 +157,6 @@
     "pubDate": "Sun, 15 Mar 2026 14:31:29 GMT",
     "description": "이제 파일들을 GitHub에 직접 올릴 차례이다. git remote add origin https://github.com/아이디/레포.git 이렇게 레포를 생성 한 뒤에 깃허브로 직접 연결할 수 있다. git push 를 터미널에 입력하면, 인증을 한 뒤 레포에 저장사항이 올라간다! git pull 내 코드들이 오래돼서 코드를 GitHub에 있는 최신걸로 바꿔야 한다 하면 터미널에 작성하여...",
     "thumbnail": "",
-    "likes": 0
-  },
-  {
-    "title": "CI/CD 01",
-    "link": "https://velog.io/@m161awm/CICD-01",
-    "pubDate": "Sat, 14 Mar 2026 14:19:08 GMT",
-    "description": "나도 슬슬 인프라로 넘어갈 수 있다고 느껴서, CI/CD를 배워보려고 한다. 먼저 그나마 쉬운 CI를 배워보겠다. CI CI는 git/github에서 참사를 방지하기 위해 사용한다. 코드를 잘못 썼는데 git commit -m \"수정\" 이러면 바로 코밋이 되어버리거나 깃허브에서 바로 푸시를 해버리면 좋지 않은 상황이 발생하게 되는데 CI 로 검사만 할 수 있다면 방지 할 수 있다! 그래서 어...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/b673f16e-3f79-449a-b466-edbfbc73cafb/image.png",
     "likes": 0
   }
 ]

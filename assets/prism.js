@@ -28,14 +28,33 @@ fetch('links.json').then(r => r.json()).then(items => {
 
 const canvas = $('#previewCanvas');
 const graphPanel = $('#networkPreview');
-const graphColors = { core:'#2563eb', cloud:'#0ea5e9', code:'#7c3aed' };
+const graphDetail = $('#networkDetail');
+const graphColors = { core:'#2563eb', cloud:'#0ea5e9', ops:'#059669', code:'#7c3aed' };
 const graphData = [
   ['Ku Bonmu','core','Cloud · DevOps · Backend',0,0,16],
-  ['DevOps','core','Infrastructure · Automation',-180,-85,11],['Security','core','System · Network',165,-100,11],['Backend','core','API · Database',185,95,11],
-  ['AWS','cloud','EC2 · VPC · Cloud',-355,-180,8],['Kubernetes','cloud','Pod · Service · Deployment',-355,-45,9],['Linux','cloud','Nginx · systemd · logs',-325,115,8],['Docker','cloud','Container · Image',-155,-230,8],['Terraform','cloud','Infrastructure as Code',20,-250,8],['Argo CD','cloud','GitOps · Delivery',-150,205,8],['GitHub Actions','cloud','CI · CD · Automation',15,235,8],['Nginx','cloud','Proxy · Web Server',-300,235,8],
-  ['NestJS','code','API · Session · Env',335,-170,8],['TypeScript','code','Typed JavaScript',350,-25,8],['Python','code','Automation · Backend',340,130,8],['MySQL','code','Relational Database',225,225,8]
+  ['Cloud & Infrastructure','cloud','Kubernetes · AWS · Docker',-210,-105,11],
+  ['Languages & Backend','code','Python · JavaScript · PostgreSQL',205,-105,11],
+  ['DevOps & Tools','ops','GitHub Actions · Git',0,145,11],
+  ['Kubernetes','cloud','Container Orchestration',-430,-220,9],
+  ['AWS','cloud','Cloud Infrastructure',-430,-85,8],
+  ['Docker','cloud','Container · Image',-365,55,8],
+  ['Python','code','Automation · Backend',425,-235,8],
+  ['Flask','code','Python Web Framework',430,-115,8],
+  ['JavaScript','code','Web Language',420,10,8],
+  ['TypeScript','code','Typed JavaScript',325,155,8],
+  ['Node.js','code','JavaScript Runtime',250,-245,8],
+  ['Gin','code','Go Web Framework',115,-245,8],
+  ['PostgreSQL','code','Relational Database',430,160,9],
+  ['GitHub Actions','ops','CI · CD · Automation',-145,250,8],
+  ['Git','ops','Version Control',145,250,8]
 ];
-const graphLinks = [[0,1],[0,2],[0,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[1,11],[2,6],[3,12],[3,13],[3,14],[3,15],[4,5],[5,7],[5,9],[6,11],[7,8],[8,10],[10,15],[12,13],[13,14],[14,15]];
+const graphLinks = [
+  [0,1],[0,2],[0,3],
+  [1,4],[1,5],[1,6],
+  [2,7],[2,8],[2,9],[2,10],[2,11],[2,12],[2,13],
+  [3,14],[3,15],
+  [4,6],[7,8],[9,10],[9,11],[10,11],[11,12],[14,15]
+];
 const nodes = graphData.map(([label,type,tags,x,y,r]) => ({label,type,tags,x,y,r,vx:0,vy:0}));
 const view = { x:0, y:0, scale:1 };
 let draggedNode = -1;
@@ -51,6 +70,14 @@ const toScreen = (node, rect) => ({x:rect.width/2 + view.x + node.x*view.scale, 
 function resetGraph() {
   const rect = canvas.getBoundingClientRect();
   view.x = 0; view.y = 0; view.scale = fitScale(rect); selectedNode = -1;
+  updateGraphDetail();
+}
+
+function updateGraphDetail() {
+  if (!graphDetail) return;
+  const node = selectedNode >= 0 ? nodes[selectedNode] : nodes[0];
+  graphDetail.querySelector('b').textContent = node.label;
+  graphDetail.querySelector('span').textContent = node.tags;
 }
 
 function simulateGraph() {
@@ -119,8 +146,8 @@ canvas.addEventListener('pointerdown', event => {
   canvas.setPointerCapture(event.pointerId);
   draggedNode=hitNode(event.clientX-canvas.getBoundingClientRect().left,event.clientY-canvas.getBoundingClientRect().top);
   if (draggedNode>=0) {
-    selectedNode=draggedNode;
-  } else { selectedNode=-1; panStart={x:event.clientX,y:event.clientY,viewX:view.x,viewY:view.y}; }
+    selectedNode=draggedNode; updateGraphDetail();
+  } else { selectedNode=-1; updateGraphDetail(); panStart={x:event.clientX,y:event.clientY,viewX:view.x,viewY:view.y}; }
 });
 canvas.addEventListener('pointermove', event => {
   const rect=canvas.getBoundingClientRect();

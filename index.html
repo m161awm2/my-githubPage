@@ -37,6 +37,7 @@
         <div class="actions">
           <a class="btn primary" href="https://velog.io/@m161awm/posts" target="_blank" rel="noreferrer">Velog Tech Blog</a>
           <a class="btn" href="https://github.com/m161awm2" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <a class="btn" href="https://www.linkedin.com/in/m161awm/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
         </div>
       </div>
 
@@ -56,16 +57,19 @@
       <div class="section-head"><h2>Tech Stack</h2></div>
       <div class="stack-list">
         <article><h3>Cloud & Infrastructure</h3><div class="chips"><span>Kubernetes</span><span>AWS</span><span>Docker</span></div></article>
-        <article><h3>Languages & Backend</h3><div class="chips"><span>Python</span><span>Flask</span><span>JavaScript</span><span>TypeScript</span><span>Node.js</span><span>Gin</span></div></article>
-        <article><h3>DevOps & Tools</h3><div class="chips"><span>GitHub Actions</span><span>Git</span><span>Argo CD</span></div></article>
+        <article><h3>Languages & Backend</h3><div class="chips"><span>Python</span><span>Flask</span><span>JavaScript</span><span>TypeScript</span><span>Node.js</span><span>Gin</span><span>PostgreSQL</span></div></article>
+        <article><h3>DevOps & Tools</h3><div class="chips"><span>GitHub Actions</span><span>Git</span></div></article>
       </div>
     </section>
 
     <section class="wrap content-section" id="network">
       <div class="section-head"><h2>Interactive Node Graph</h2></div>
       <div class="network-preview" id="networkPreview">
-        <canvas id="previewCanvas"></canvas>
+        <canvas id="previewCanvas" aria-label="Ku Bonmu의 기술 스택을 연결한 인터랙티브 네트워크 그래프"></canvas>
         <span class="network-title">Ku Bonmu · Network</span>
+        <div class="network-detail" id="networkDetail" aria-live="polite">
+          <b>Ku Bonmu</b><span>Cloud · DevOps · Backend</span>
+        </div>
         <div class="network-controls">
           <button id="zoomOut" type="button" aria-label="축소">−</button>
           <button id="resetNetwork" type="button">Reset</button>

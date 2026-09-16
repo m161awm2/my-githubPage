@@ -1,30 +1,30 @@
 [
   {
-    "name": "Dogsori",
-    "url": "https://github.com/m161awm2/Dogsori",
+    "name": "cicd-practice",
+    "url": "https://github.com/m161awm2/cicd-practice",
     "description": "GitHub에서 프로젝트 내용을 확인해보세요.",
-    "language": "JavaScript",
-    "stars": 1
-  },
-  {
-    "name": "SQLi_ClientBypass_wargame",
-    "url": "https://github.com/m161awm2/SQLi_ClientBypass_wargame",
-    "description": "해당 사이트에 출제되었습니다",
     "language": "TypeScript",
-    "stars": 1
+    "stars": 0
   },
   {
-    "name": "ebs-lesson-automator",
-    "url": "https://github.com/m161awm2/ebs-lesson-automator",
+    "name": "AWS-EKS-Fargate-diagram",
+    "url": "https://github.com/kubonmu-presentation/AWS-EKS-Fargate-diagram",
     "description": "GitHub에서 프로젝트 내용을 확인해보세요.",
-    "language": "JavaScript",
-    "stars": 1
+    "language": "Go",
+    "stars": 0
   },
   {
-    "name": "k8sgames",
-    "url": "https://github.com/m161awm2/k8sgames",
-    "description": "k8s게임 한국어 패치 버전입니다. 게임을 하며 쿠버네티스를 배워보세요. 별도의 설치 없이 브라우저에서 즐기는 3D 게임으로, 직접 파드(Pod)를 배포하고 CrashLoopBackOff 문제를 해결하며 실제 kubectl 명령어를 입력해 볼 수 있습니다.",
-    "language": "JavaScript",
-    "stars": 2
+    "name": "velocity-bulletinBE",
+    "url": "https://github.com/m161awm2/velocity-bulletinBE",
+    "description": "Repository for the Gin-based REST API backend of velocity-bulletin.",
+    "language": "Go",
+    "stars": 0
+  },
+  {
+    "name": "velocity-bulletinInfra",
+    "url": "https://github.com/m161awm2/velocity-bulletinInfra",
+    "description": "This repository contains the infrastructure components for the velocity-bulletin project, implemented using IaC.",
+    "language": "HCL",
+    "stars": 0
   }
 ]

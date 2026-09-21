@@ -5,7 +5,7 @@
     "pubDate": "Sun, 20 Sep 2026 11:02:04 GMT",
     "description": "서론 2026년 9월 기준 사람은 코드를 치면서 개발하지 않는다. AI/LLM 시대에 입문한 고등학생 개발자로서 나는 코덱스(Codex)나 클로드 코드(Claude Code)를 사용해보면서 한 가지 의문이 들었다. &quot;개발자가 왜 필요한 거지?&quot; 단순 개발은 지나가는 초등학생한테 LLM 에이전트를 주고 코딩을 시켜서 굉장한 작품을 만들 수 있을 정도로 많이 발전했고, 나는 이...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/c874eabd-bda2-4677-8383-42d0fe007f67/image.png",
-    "likes": 1
+    "likes": 2
   },
   {
     "title": "NAT, VPN, Reverse/Forward Proxy 그리고 API Gateway",

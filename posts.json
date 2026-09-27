@@ -1,5 +1,21 @@
 [
   {
+    "title": "AI가 만들었는데 면접관이 코드 설명 해보라고 하면 어떻게 해야 할까?",
+    "link": "https://velog.io/@m161awm/AI%EA%B0%80-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8A%94%EB%8D%B0-%EB%A9%B4%EC%A0%91%EA%B4%80%EC%9D%B4-%EC%BD%94%EB%93%9C-%EC%84%A4%EB%AA%85-%ED%95%B4%EB%B3%B4%EB%9D%BC%EA%B3%A0-%ED%95%98%EB%A9%B4-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C",
+    "pubDate": "Sun, 20 Sep 2026 11:02:04 GMT",
+    "description": "서론 2026년 9월 기준 사람은 코드를 치면서 개발하지 않는다. AI/LLM 시대에 입문한 고등학생 개발자로서 나는 코덱스(Codex)나 클로드 코드(Claude Code)를 사용해보면서 한 가지 의문이 들었다. &quot;개발자가 왜 필요한 거지?&quot; 단순 개발은 지나가는 초등학생한테 LLM 에이전트를 주고 코딩을 시켜서 굉장한 작품을 만들 수 있을 정도로 많이 발전했고, 나는 이...",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/c874eabd-bda2-4677-8383-42d0fe007f67/image.png",
+    "likes": 5
+  },
+  {
+    "title": "NAT, VPN, Reverse/Forward Proxy 그리고 API Gateway",
+    "link": "https://velog.io/@m161awm/NAT-VPN-Reverse-Proxy-VS-Forward-Proxy",
+    "pubDate": "Sun, 13 Sep 2026 15:32:37 GMT",
+    "description": "서론 우리가 네트워크를 공부 할 때에 가장 헷갈리는 용어인 NAT, VPN, 리버스 프록시와 포워드 프록시를 알아보겠다. Network Address Translation Network Address Translation, 줄여서 NAT라고 한다. 먼저 공유기가 하는 일을 알아보면 좋다, 공유기는 CIDR이 /24 라고 치자면, 256개의 사설 IP를 가질 수 있다. 그 사설 IP가 한 공유...",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/7926ac13-6e38-43e4-92d0-1fbcfb996fcf/image.png",
+    "likes": 0
+  },
+  {
     "title": "Gin (진) 프레임워크",
     "link": "https://velog.io/@m161awm/Gin-%EC%A7%84-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC",
     "pubDate": "Mon, 24 Aug 2026 07:59:56 GMT",
@@ -8,7 +24,7 @@
     "likes": 0
   },
   {
-    "title": "[k8s] 이제 msa환경에선 인그레스를 안쓴다. Gateway API 구축해보기",
+    "title": "[k8s] Gateway API",
     "link": "https://velog.io/@m161awm/k8s-%EC%9D%B4%EC%A0%9C-msa%ED%99%98%EA%B2%BD%EC%97%90%EC%84%A0-%EC%9D%B8%EA%B7%B8%EB%A0%88%EC%8A%A4%EB%A5%BC-%EC%95%88%EC%93%B4%EB%8B%A4.-Gateway-API-%EA%B5%AC%EC%B6%95%ED%95%B4%EB%B3%B4%EA%B8%B0",
     "pubDate": "Mon, 17 Aug 2026 13:21:23 GMT",
     "description": "예전에 Ingress를 썼던 이유 게이트웨이 API를 설명하기 전, 쿠버네티스 인그레스(Ingress)의 역사를 먼저 얘기 해보겠다. 2023년 게이트웨이 API를 사용하기 전, k8s사용자들은 인그레스라는걸 많이 사용했었다. 인그레스를 왜 사용했었냐 하면 안정적이게 외부 사용자들을 서비스로 보내는 역할도 함과 동시에 TLS인증서를 발급받거나, 디플로이먼트와의 라우트 연결을 위해 해석하는 역...",
@@ -141,22 +157,6 @@
     "pubDate": "Wed, 18 Mar 2026 15:13:04 GMT",
     "description": "SQLite란, 파이썬이 기본으로 지원하는 모듈중 하나인 sql중 하나이다. Flask 이 모듈 하나때문에... 나도 왠지 모르게 풀스택 개발자가 되어가고있다, 조금 욕심 내서 바로 Mysql 배울까 생각했는데 배우다가 빡치면 바로 포기하는 내 성격때문에 기초적인 SQLite 을 배워야겠다. 그리고 웹개발 제대로 하려면 진짜 풀스택이 필수라 느꼈다, DB 배우는 이유가 빅데이터 분석기사 하라...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/37d49981-80cc-47aa-8673-01d5be9b9507/image.png",
-    "likes": 0
-  },
-  {
-    "title": "git 02",
-    "link": "https://velog.io/@m161awm/git-02",
-    "pubDate": "Sun, 15 Mar 2026 14:31:29 GMT",
-    "description": "이제 파일들을 GitHub에 직접 올릴 차례이다. git remote add origin https://github.com/아이디/레포.git 이렇게 레포를 생성 한 뒤에 깃허브로 직접 연결할 수 있다. git push 를 터미널에 입력하면, 인증을 한 뒤 레포에 저장사항이 올라간다! git pull 내 코드들이 오래돼서 코드를 GitHub에 있는 최신걸로 바꿔야 한다 하면 터미널에 작성하여...",
-    "thumbnail": "",
-    "likes": 0
-  },
-  {
-    "title": "CI/CD 01",
-    "link": "https://velog.io/@m161awm/CICD-01",
-    "pubDate": "Sat, 14 Mar 2026 14:19:08 GMT",
-    "description": "나도 슬슬 인프라로 넘어갈 수 있다고 느껴서, CI/CD를 배워보려고 한다. 먼저 그나마 쉬운 CI를 배워보겠다. CI CI는 git/github에서 참사를 방지하기 위해 사용한다. 코드를 잘못 썼는데 git commit -m \"수정\" 이러면 바로 코밋이 되어버리거나 깃허브에서 바로 푸시를 해버리면 좋지 않은 상황이 발생하게 되는데 CI 로 검사만 할 수 있다면 방지 할 수 있다! 그래서 어...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/b673f16e-3f79-449a-b466-edbfbc73cafb/image.png",
     "likes": 0
   }
 ]

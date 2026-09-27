@@ -33,27 +33,22 @@ const graphColors = { core:'#2563eb', cloud:'#0ea5e9', ops:'#059669', code:'#7c3
 const graphData = [
   ['Ku Bonmu','core','Cloud · DevOps · Backend',0,0,16],
   ['Cloud & Infrastructure','cloud','Kubernetes · AWS · Docker',-210,-105,11],
-  ['Languages & Backend','code','Python · JavaScript · PostgreSQL',205,-105,11],
+  ['Languages & Backend','code','Gin · PostgreSQL',205,-105,11],
   ['DevOps & Tools','ops','GitHub Actions · Git',0,145,11],
   ['Kubernetes','cloud','Container Orchestration',-430,-220,9],
   ['AWS','cloud','Cloud Infrastructure',-430,-85,8],
   ['Docker','cloud','Container · Image',-365,55,8],
-  ['Python','code','Automation · Backend',425,-235,8],
-  ['Flask','code','Python Web Framework',430,-115,8],
-  ['JavaScript','code','Web Language',420,10,8],
-  ['TypeScript','code','Typed JavaScript',325,155,8],
-  ['Node.js','code','JavaScript Runtime',250,-245,8],
-  ['Gin','code','Go Web Framework',115,-245,8],
-  ['PostgreSQL','code','Relational Database',430,160,9],
+  ['Gin','code','Go Web Framework',425,-220,8],
+  ['PostgreSQL','code','Relational Database',425,-20,9],
   ['GitHub Actions','ops','CI · CD · Automation',-145,250,8],
   ['Git','ops','Version Control',145,250,8]
 ];
 const graphLinks = [
   [0,1],[0,2],[0,3],
   [1,4],[1,5],[1,6],
-  [2,7],[2,8],[2,9],[2,10],[2,11],[2,12],[2,13],
-  [3,14],[3,15],
-  [4,6],[7,8],[9,10],[9,11],[10,11],[11,12],[14,15]
+  [2,7],[2,8],
+  [3,9],[3,10],
+  [4,6],[9,10]
 ];
 const nodes = graphData.map(([label,type,tags,x,y,r]) => ({label,type,tags,x,y,r,vx:0,vy:0}));
 const view = { x:0, y:0, scale:1 };

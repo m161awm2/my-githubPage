@@ -4,7 +4,7 @@ const safeUrl = (value = '') => { try { const url = new URL(value, location.href
 
 $('#year').textContent = new Date().getFullYear();
 
-fetch('journey.json').then(r => r.json()).then(items => {
+fetch('journey.json', { cache: 'no-cache' }).then(r => r.json()).then(items => {
   $('#journeyList').innerHTML = items.map(item => `<div class="journey-item"><time>${escapeHtml(item.date)}</time><div><b>${escapeHtml(item.title)}</b>${item.description ? `<p>${escapeHtml(item.description)}</p>` : ''}</div></div>`).join('');
 }).catch(() => {});
 
@@ -14,15 +14,15 @@ fetch('https://api.github.com/users/m161awm2').then(r => r.json()).then(profile 
   $('#followingCount').textContent = Number(profile.following || 0).toLocaleString();
 }).catch(() => {});
 
-fetch('projects.json').then(r => r.json()).then(items => {
+fetch('projects.json', { cache: 'no-cache' }).then(r => r.json()).then(items => {
   $('#projectGrid').innerHTML = items.slice(0, 6).map(item => `<a class="data-card" href="${safeUrl(item.url)}" target="_blank" rel="noreferrer"><span class="meta">${escapeHtml(item.language || 'PROJECT')}</span><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.description || 'GitHub에서 프로젝트 내용을 확인해보세요.')}</p><span class="arrow">프로젝트 보기 ↗</span></a>`).join('');
 }).catch(() => {});
 
-fetch('posts.json').then(r => r.json()).then(items => {
+fetch('posts.json', { cache: 'no-cache' }).then(r => r.json()).then(items => {
   $('#postGrid').innerHTML = items.slice(0, 6).map(item => `<a class="data-card" href="${safeUrl(item.link || item.url)}" target="_blank" rel="noreferrer"><span class="meta">VELOG NOTE</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description || item.summary || '기술을 공부하며 남긴 기록입니다.')}</p><span class="arrow">글 읽기 ↗</span></a>`).join('');
 }).catch(() => {});
 
-fetch('links.json').then(r => r.json()).then(items => {
+fetch('links.json', { cache: 'no-cache' }).then(r => r.json()).then(items => {
   $('#linksList').innerHTML = items.map(item => `<a class="link-item" href="${safeUrl(item.url)}" target="_blank" rel="noreferrer"><span>${escapeHtml(item.shortTitle || item.title)}</span><b>↗</b></a>`).join('');
 }).catch(() => {});
 

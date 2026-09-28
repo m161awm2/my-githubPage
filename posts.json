@@ -1,5 +1,13 @@
 [
   {
+    "title": "[AWS Build Chall] ECS 파게이트를 사용한 웹 서비스가 돌아갈 환경을 구축해보자!",
+    "link": "https://velog.io/@m161awm/AWS-Build-Chall-ECS-%ED%8C%8C%EA%B2%8C%EC%9D%B4%ED%8A%B8%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EC%9B%B9-%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B0%80-%EB%8F%8C%EC%95%84%EA%B0%88-%ED%99%98%EA%B2%BD%EC%9D%84-%EA%B5%AC%EC%B6%95%ED%95%B4%EB%B3%B4%EC%9E%90",
+    "pubDate": "Mon, 28 Sep 2026 15:17:25 GMT",
+    "description": "레포지토리 확인 이와 같은 환경을 구축할 예정이다. 사실 이전에도 한 번 만들었지만, VPC Origin의 프리 티어 제한 때문에 중간에 그만둔 사연이 있다. 그래서 기존 아키텍처에서 크게 바뀐 것은 Internal ALB 대신 Public ALB를 사용한다는 점이다. VPC / 서브넷 / 라우팅 테이블 구축 사실 중요한 과정은 아니라서 CIDR 정도만 간략하게 적겠다. VPC CIDR: 1...",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/7f59eefc-b49c-420b-b135-a18efca6e512/image.png",
+    "likes": 0
+  },
+  {
     "title": "AI가 만들었는데 면접관이 코드 설명 해보라고 하면 어떻게 해야 할까?",
     "link": "https://velog.io/@m161awm/AI%EA%B0%80-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8A%94%EB%8D%B0-%EB%A9%B4%EC%A0%91%EA%B4%80%EC%9D%B4-%EC%BD%94%EB%93%9C-%EC%84%A4%EB%AA%85-%ED%95%B4%EB%B3%B4%EB%9D%BC%EA%B3%A0-%ED%95%98%EB%A9%B4-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C",
     "pubDate": "Sun, 20 Sep 2026 11:02:04 GMT",
@@ -149,14 +157,6 @@
     "pubDate": "Sat, 21 Mar 2026 06:09:44 GMT",
     "description": "웹 서버랑 플라스크 서버를 만들었을때 큰 문제 하나가 있었다 바로 컴퓨터를 끄거나 리눅스 터미널을 닫으면 즉시 서버가 닫힌다는거였다... 그래서 내가 하고싶었던게 24시간동안 서버를 운영하는거였다 AWS는 계정 활성화가 끝나야 EC2 같은 서비스를 정상적으로 사용할 수 있어서 가입이 완전히 끝나지 않으면 EC2 생성이 안된다, 아무튼 가입을 한 뒤 AWS EC2에서 가상 서버를 하나 만들었다...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/2c55fe88-bf91-4a84-9ca2-e3a273c75bb5/image.png",
-    "likes": 0
-  },
-  {
-    "title": "SQLite",
-    "link": "https://velog.io/@m161awm/SQLite",
-    "pubDate": "Wed, 18 Mar 2026 15:13:04 GMT",
-    "description": "SQLite란, 파이썬이 기본으로 지원하는 모듈중 하나인 sql중 하나이다. Flask 이 모듈 하나때문에... 나도 왠지 모르게 풀스택 개발자가 되어가고있다, 조금 욕심 내서 바로 Mysql 배울까 생각했는데 배우다가 빡치면 바로 포기하는 내 성격때문에 기초적인 SQLite 을 배워야겠다. 그리고 웹개발 제대로 하려면 진짜 풀스택이 필수라 느꼈다, DB 배우는 이유가 빅데이터 분석기사 하라...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/37d49981-80cc-47aa-8673-01d5be9b9507/image.png",
     "likes": 0
   }
 ]

@@ -93,7 +93,7 @@
     "pubDate": "Sun, 10 May 2026 08:19:42 GMT",
     "description": "이 글은 LLM과 함께 제작되었습니다 맥에서 코덱스를 다운로드 하려고 하던 중 바로 사파리에 codex를 검색하여 맨 위에 있는 사이트에 접속하였다 당연히 OpenAI Codex를 다운로드하는 것처럼 보였다. 하지만... 복사하고 터미널에 붙혀넣기전 갑가지 수상한 명령어를 보고 즉시 중단하였다. echo \"Downloading Codex: https://chatgpt.com/codex-app...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/1525e177-5d7a-4881-8dda-2344f13076ce/image.png",
-    "likes": 0
+    "likes": 12
   },
   {
     "title": "NestJs를 활용해 S3에 이미지를 업로드하기",

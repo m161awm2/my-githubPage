@@ -7,13 +7,6 @@
     "stars": 0
   },
   {
-    "name": "AWS-EKS-Fargate-diagram",
-    "url": "https://github.com/kubonmu-presentation/AWS-EKS-Fargate-diagram",
-    "description": "GitHub에서 프로젝트 내용을 확인해보세요.",
-    "language": "Go",
-    "stars": 0
-  },
-  {
     "name": "velocity-bulletinBE",
     "url": "https://github.com/m161awm2/velocity-bulletinBE",
     "description": "Repository for the Gin-based REST API backend of velocity-bulletin.",
@@ -25,6 +18,13 @@
     "url": "https://github.com/m161awm2/velocity-bulletinInfra",
     "description": "This repository contains the infrastructure components for the velocity-bulletin project, implemented using IaC.",
     "language": "HCL",
+    "stars": 0
+  },
+  {
+    "name": "AWS-EKS-Fargate-diagram",
+    "url": "https://github.com/kubonmu-presentation/AWS-EKS-Fargate-diagram",
+    "description": "GitHub에서 프로젝트 내용을 확인해보세요.",
+    "language": "Go",
     "stars": 0
   }
 ]

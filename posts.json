@@ -5,7 +5,7 @@
     "pubDate": "Sat, 03 Oct 2026 15:16:55 GMT",
     "description": "리뷰할 백엔드 레포지토리 https://github.com/m161awm2/velocity-bulletinBE/blob/main/cmd/server/main.go main.go 파일을 먼저 확인해본다. logger := log.New(os.Stdout, &quot;&quot;, log.LstdFlags) cfg, err := config.Load() // 환경변수를 읽어 Config 구조체에...",
     "thumbnail": "",
-    "likes": 0
+    "likes": 1
   },
   {
     "title": "[AWS Build Chall] ECS 파게이트를 사용한 웹 서비스가 돌아갈 환경을 구축해보자!",

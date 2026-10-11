@@ -21,10 +21,10 @@
     "stars": 0
   },
   {
-    "name": "AWS-EKS-Fargate-diagram",
-    "url": "https://github.com/kubonmu-presentation/AWS-EKS-Fargate-diagram",
+    "name": "MallData_Pipeline",
+    "url": "https://github.com/m161awm2/MallData_Pipeline",
     "description": "GitHub에서 프로젝트 내용을 확인해보세요.",
-    "language": "Go",
+    "language": "GitHub",
     "stars": 0
   }
 ]

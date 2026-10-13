@@ -1,5 +1,13 @@
 [
   {
+    "title": "[Data] Apache Spark",
+    "link": "https://velog.io/@m161awm/Data-Apache-Spark",
+    "pubDate": "Tue, 13 Oct 2026 00:51:13 GMT",
+    "description": "Apache Spark 이란? 데이터 엔지니어링 파이프라인의 Transform, 즉 변환단계를 담당하는 핵심 빅데이터 분산 컴퓨팅 프레임워크 이다. 데이터 엔지니어링은 사람의 판단이 매우 중요한 분야이다 무슨 소리냐면 클라이언트한테 역 ETL로 보내야하는데 다운스트림 스토리지가 데이터레이크(S3)라면 배치방식으로 진행되어 UX가 파괴되는 상황이 발생한다. AWS Redshift나 BigQue...",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/a29dfabd-9d09-4c8c-91a2-e9ff982784da/image.png",
+    "likes": 0
+  },
+  {
     "title": "[Code Review] 복잡한 Gin 백엔드 코드 분석하기",
     "link": "https://velog.io/@m161awm/Code-Review-Gin",
     "pubDate": "Sat, 03 Oct 2026 15:16:55 GMT",
@@ -149,14 +157,6 @@
     "pubDate": "Fri, 27 Mar 2026 11:43:23 GMT",
     "description": "대표적인 DBMS중 하나인 MySql! 기존에 내가 쓰던 sqlite3와 비교가 안된다. 기존에 쓰던 sqlite3은 데이터베이스 파일을 내 컴퓨터에 파일로 저장하는 방식이였다면 mysql은 MySQL 서버에 데이터베이스를 만들고 접근하여 실행하는 방식이다. 그래서 mysql server 프로그램을 따로 깔고 유저와 비밀번호를 따로 만들어 접근해야한다. pip install pymysql 터...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/c15aca33-d544-4d05-b181-de1759f2f6d1/image.png",
-    "likes": 1
-  },
-  {
-    "title": "AWS RDS",
-    "link": "https://velog.io/@m161awm/AWS-RDS",
-    "pubDate": "Thu, 26 Mar 2026 12:51:18 GMT",
-    "description": "데브옵스 분야의 핵심! RDS를 써보자!!!! 그 전에는 sqlite를 사용하여 DB가 EC2 안에 있었지만 이제 mysql로 바꿔서 RDS를 사용할수 있게되었다! 첫번째 고난은 그 전에 있었던 프레임워크 코드를 sqlite에서 mysql문법으로 바꾸는거였다, 아주 크게 다른건 아니지만 sqlite에선 conn = sqlite.connect(\"db이름\") 으로 쉽게 생성하고 연결하였지만 my...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/f454eed7-1ad6-4f61-be87-fd20949b7590/image.png",
     "likes": 1
   }
 ]

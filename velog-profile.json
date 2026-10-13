@@ -5,11 +5,11 @@
   "url": "https://velog.io/@m161awm",
   "rssUrl": "https://v2.velog.io/rss/m161awm",
   "postCount": 20,
-  "totalLikes": 32,
+  "totalLikes": 31,
   "latestPost": {
-    "title": "[Code Review] 복잡한 Gin 백엔드 코드 분석하기",
-    "link": "https://velog.io/@m161awm/Code-Review-Gin",
-    "pubDate": "Sat, 03 Oct 2026 15:16:55 GMT"
+    "title": "[Data] Apache Spark",
+    "link": "https://velog.io/@m161awm/Data-Apache-Spark",
+    "pubDate": "Tue, 13 Oct 2026 00:51:13 GMT"
   },
-  "updatedAt": "Sat, 03 Oct 2026 15:16:55 GMT"
+  "updatedAt": "Tue, 13 Oct 2026 00:51:13 GMT"
 }

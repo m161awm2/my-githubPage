@@ -3,7 +3,7 @@
     "title": "[Apache Spark] ETL의 Transform",
     "link": "https://velog.io/@m161awm/Apache-Spark",
     "pubDate": "Tue, 13 Oct 2026 00:51:13 GMT",
-    "description": "Apache Spark 이란? 데이터 엔지니어링 파이프라인의 Transform, 즉 변환단계를 담당하는 핵심 빅데이터 분산 컴퓨팅 프레임워크 이다. 데이터 엔지니어링은 사람의 판단이 매우 중요한 분야이다 무슨 소리냐면 클라이언트한테 서빙을 해서 보내야하는데 다운스트림 스토리지가 데이터레이크(S3)라면 배치방식으로 진행되어 UX가 파괴되는 상황이 발생한다. AWS Redshift나 BigQue...",
+    "description": "Apache Spark 이란? 데이터 엔지니어링 파이프라인의 Transform, 즉 변환단계를 담당하는 핵심 빅데이터 분산 컴퓨팅 프레임워크 이다. 데이터 엔지니어링은 사람의 판단이 매우 중요한 분야이다 무슨 소리냐면 클라이언트한테 역 ETL로 보내야하는데 다운스트림 스토리지가 데이터레이크(S3)라면 배치방식으로 진행되어 UX가 파괴되는 상황이 발생한다. AWS Redshift나 BigQue...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/a29dfabd-9d09-4c8c-91a2-e9ff982784da/image.png",
     "likes": 0
   },

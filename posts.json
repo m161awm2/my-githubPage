@@ -61,7 +61,7 @@
     "pubDate": "Sat, 01 Aug 2026 11:05:16 GMT",
     "description": "이번 글에서는 NestJS 애플리케이션을 Docker 이미지로 만든 뒤 다음 순서로 배포한다. Pull Request 또는 main 브랜치 push가 발생한다. GitHub Actions 러너 안에 KIND 클러스터를 만든다. 같은 이미지를 KIND에 먼저 배포하고 실제 HTTP 응답까지 검사한다. KIND 검증을 통과한 main push만 AWS OIDC로 인증한다. 이미지를 Amazon...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/bcfcf0b7-03c2-44d4-b59d-000b94bd0d93/image.png",
-    "likes": 1
+    "likes": 0
   },
   {
     "title": "k8sGame에 대해.araboja + 한국어 배포판",
@@ -69,7 +69,7 @@
     "pubDate": "Sat, 04 Jul 2026 11:15:54 GMT",
     "description": "인스타를 보던 중 재미있는 게시글을 보았다! https://github.com/rohitg00/k8sgames k8s를 게임처럼 할 수 있다고?? 바로 들어가보았다. 캠페인이 아마 문제를 푸는탭인것같은데 들어가보겠다. Click palette = 리소스 선택/배치 Drag resource = 리소스 드래그 이동 Click resource = 리소스 정보 확인 Right-click = 스케일/...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/a51237f4-2860-457e-b2e9-f08984bfe99f/image.png",
-    "likes": 2
+    "likes": 0
   },
   {
     "title": "AWS SSM으로 프라이빗 서브넷에 있는 EC2에 들어가보기",
@@ -109,7 +109,7 @@
     "pubDate": "Mon, 04 May 2026 12:20:47 GMT",
     "description": "S3란? AWS에 기본적인 서비스라고 하면 S3라는 서비스가 있다 Simple Storage Service S가 3개 있다고 해서 S3라고 부른다 S3에는 이미지 뿐만 아니라 프론트엔드나 다른것도 업로드 하고 보여줄수 있다. 다른 서비스와 달리 외부 에서 꺼내오고 넣는 방식으로 사용된다. 구축 먼저 인프라를 구축해주겠다. 편하려면 리전을 먼저 바꿔주자 VPC를 먼저 만들어주겠다. 이제 서브넷...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/6fbc059a-7e92-4e8b-9afb-a02f119a405e/image.png",
-    "likes": 1
+    "likes": 0
   },
   {
     "title": "AWS 탄력적 IP",
@@ -133,7 +133,7 @@
     "pubDate": "Sat, 25 Apr 2026 17:41:59 GMT",
     "description": "TS 어디서 많이 본 것 같은 이 단어는.. 타입스크립트 라고 불러야한다. 먼저 바로 NestJs를 들어가는것보단 이 프로그래밍 언어를 알아보는게 중요할것같다. NestJs 프레임워크는 타입스크립트로 작성된다. 타입스크립트란 Js와 문법은 아주 비슷하지만 큰 차이점인 타입을 표기해줘야한다.(변수,클래스,메서드, 스트럭트 등등) JS와 달리 안전하고 에러를 방지할 수 있다. 내가 자바스크립트를...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/429a6216-173b-4be9-b002-70012fca480d/image.png",
-    "likes": 1
+    "likes": 0
   },
   {
     "title": "AWS 안전한 인프라 구축하기",
@@ -141,7 +141,7 @@
     "pubDate": "Thu, 23 Apr 2026 14:16:57 GMT",
     "description": "AWS 사용까지 1개월 조금 안됐지만 나도 대회 나가고싶어서 하게되었다. 기존까진 그냥 EC2를 만든 후 AWS가 자동으로 VPC만들고, RDS를 붙혀오는 방식이였다. 근데 이런식이면 누가 클라우드 엔지니어라고 인정을 하겠나 그래서 내가 할 수 있는 한 직접 클라우드 인프라를 구축해볼것이다. 첫번째로 VPC를 만드는거다, VPC는 스위치라고 볼 수 있을정도로 비슷한 부분이 많다, 서비스(기기...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/7b7a6923-d5b9-4bf0-9c65-1aea41b3dca3/image.png",
-    "likes": 1
+    "likes": 0
   },
   {
     "title": "AWS Route 53, ELB, SSL 인증",

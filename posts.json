@@ -141,7 +141,7 @@
     "pubDate": "Thu, 23 Apr 2026 14:16:57 GMT",
     "description": "AWS 사용까지 1개월 조금 안됐지만 나도 대회 나가고싶어서 하게되었다. 기존까진 그냥 EC2를 만든 후 AWS가 자동으로 VPC만들고, RDS를 붙혀오는 방식이였다. 근데 이런식이면 누가 클라우드 엔지니어라고 인정을 하겠나 그래서 내가 할 수 있는 한 직접 클라우드 인프라를 구축해볼것이다. 첫번째로 VPC를 만드는거다, VPC는 스위치라고 볼 수 있을정도로 비슷한 부분이 많다, 서비스(기기...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/7b7a6923-d5b9-4bf0-9c65-1aea41b3dca3/image.png",
-    "likes": 0
+    "likes": 1
   },
   {
     "title": "AWS Route 53, ELB, SSL 인증",

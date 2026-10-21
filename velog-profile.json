@@ -5,11 +5,11 @@
   "url": "https://velog.io/@m161awm",
   "rssUrl": "https://v2.velog.io/rss/m161awm",
   "postCount": 20,
-  "totalLikes": 31,
+  "totalLikes": 30,
   "latestPost": {
-    "title": "[Apache Spark] ETL의 Transform",
-    "link": "https://velog.io/@m161awm/Apache-Spark",
-    "pubDate": "Tue, 13 Oct 2026 00:51:13 GMT"
+    "title": "[Apache Kafka] 메시지 브로커, 카프카",
+    "link": "https://velog.io/@m161awm/Apache-Kafka-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%B8%8C%EB%A1%9C%EC%BB%A4-%EC%B9%B4%ED%94%84%EC%B9%B4",
+    "pubDate": "Wed, 21 Oct 2026 11:53:15 GMT"
   },
-  "updatedAt": "Tue, 13 Oct 2026 00:51:13 GMT"
+  "updatedAt": "Wed, 21 Oct 2026 11:53:15 GMT"
 }

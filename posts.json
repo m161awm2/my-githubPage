@@ -1,5 +1,13 @@
 [
   {
+    "title": "[Apache Kafka] 메시지 브로커, 카프카",
+    "link": "https://velog.io/@m161awm/Apache-Kafka-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%B8%8C%EB%A1%9C%EC%BB%A4-%EC%B9%B4%ED%94%84%EC%B9%B4",
+    "pubDate": "Wed, 21 Oct 2026 11:53:15 GMT",
+    "description": "시작하기 전 카프카를 먼저 설명하기 전 pub/sub 개념을 설명하는게 좋겠다. publish는 카프카로 메시지를 보내는 원천, 카프카 생태계에선 프로듀서 라고 부른다, 그리고 subcribe는 그 받은 메시지를 다운스트림으로 보내는걸 컨슈머 라고 부른다. 카프카에서 이러한 과정을 브로커 라고 부르는데 이와 같은 뜻으로 메시지를 주고받는다 해서 메시지 브로커라고 부른다. 카프카는 데이터 엔지...",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/c0b3bccb-da82-4c11-a2b6-a7981c8c0156/image.png",
+    "likes": 0
+  },
+  {
     "title": "[Apache Spark] ETL의 Transform",
     "link": "https://velog.io/@m161awm/Apache-Spark",
     "pubDate": "Tue, 13 Oct 2026 00:51:13 GMT",
@@ -150,13 +158,5 @@
     "description": "Route 53 AWS의 DNS 서비스이다. DNS의 포트 번호가 53 이라 이 서비스의 이름을 Route 53이라고 지은것이다. 아키텍쳐(?)를 그려봤는데 이 퍼블릭 IP로 접근하면 내 엔진엑스 EC2 서버로 접근되면서 잘 작동 할거다. 근데 DNS도 포트번호가 있는데 이상하게 EC2 보안그룹 설정을 안해줘도 된다. 왜냐하면 DNS 프로그램은 EC2랑 접촉을 안하기 때문에 보안그룹 설정을...",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/ff8fb36f-d498-4c01-ab7f-8a4908c1a8ca/image.png",
     "likes": 0
-  },
-  {
-    "title": "MySql",
-    "link": "https://velog.io/@m161awm/MySql",
-    "pubDate": "Fri, 27 Mar 2026 11:43:23 GMT",
-    "description": "대표적인 DBMS중 하나인 MySql! 기존에 내가 쓰던 sqlite3와 비교가 안된다. 기존에 쓰던 sqlite3은 데이터베이스 파일을 내 컴퓨터에 파일로 저장하는 방식이였다면 mysql은 MySQL 서버에 데이터베이스를 만들고 접근하여 실행하는 방식이다. 그래서 mysql server 프로그램을 따로 깔고 유저와 비밀번호를 따로 만들어 접근해야한다. pip install pymysql 터...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/c15aca33-d544-4d05-b181-de1759f2f6d1/image.png",
-    "likes": 1
   }
 ]

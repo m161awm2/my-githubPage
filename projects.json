@@ -1,12 +1,5 @@
 [
   {
-    "name": "cicd-practice",
-    "url": "https://github.com/m161awm2/cicd-practice",
-    "description": "GitHub에서 프로젝트 내용을 확인해보세요.",
-    "language": "Go",
-    "stars": 0
-  },
-  {
     "name": "velocity-bulletinBE",
     "url": "https://github.com/m161awm2/velocity-bulletinBE",
     "description": "Repository for the Gin-based REST API backend of velocity-bulletin.",

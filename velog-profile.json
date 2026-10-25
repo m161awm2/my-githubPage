@@ -3,12 +3,12 @@
   "title": "cloud.m161awm",
   "description": "Velog에 기록한 개발 학습 로그입니다.",
   "url": "https://velog.io/@m161awm",
-  "postCount": 38,
+  "postCount": 39,
   "totalLikes": 49,
   "latestPost": {
-    "title": "[Apache Kafka] Kafka Data Streaming",
-    "link": "https://velog.io/@m161awm/Apache-Kafka",
-    "pubDate": "Wed, 21 Oct 2026 11:53:15 GMT"
+    "title": "이제 고등학생은 코딩을 안한다, AI 네이티브 해커톤 \"신입인데 만렙입니다\" 후기",
+    "link": "https://velog.io/@m161awm/2026hack",
+    "pubDate": "Sun, 25 Oct 2026 15:30:20 GMT"
   },
-  "updatedAt": "Wed, 21 Oct 2026 11:53:15 GMT"
+  "updatedAt": "Sun, 25 Oct 2026 15:30:20 GMT"
 }

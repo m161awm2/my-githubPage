@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Data Engineering",
+    "url": "https://velog.io/@m161awm/series/Data-Engineering",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/9dccc29d-8a0a-46f1-90cc-5244ab23faef/image.png",
+    "posts": [
+      {
+        "title": "[Apache Spark] ETL Transform",
+        "link": "https://velog.io/@m161awm/Apache-Spark",
+        "tags": [
+          "DE",
+          "data",
+          "spark",
+          "빅데이터"
+        ],
+        "thumbnail": "https://velog.velcdn.com/images/m161awm/post/9dccc29d-8a0a-46f1-90cc-5244ab23faef/image.png"
+      },
+      {
+        "title": "[Apache Kafka] Kafka Data Streaming",
+        "link": "https://velog.io/@m161awm/Apache-Kafka",
+        "tags": [
+          "DE",
+          "kafka",
+          "빅데이터"
+        ],
+        "thumbnail": "https://velog.velcdn.com/images/m161awm/post/8bfd3d7f-07dd-4e30-bc33-beaf8d878ca1/image.png"
+      }
+    ]
+  },
+  {
+    "name": "PROJECT",
+    "url": "https://velog.io/@m161awm/series/project",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/ced5268c-5ba4-4721-adf1-afe077bbed86/image.png",
+    "posts": [
+      {
+        "title": "[Code Review] 복잡한 Gin 백엔드 코드 분석하기",
+        "link": "https://velog.io/@m161awm/Code-Review-Gin",
+        "tags": [
+          "challenge",
+          "development",
+          "메모",
+          "일상"
+        ],
+        "thumbnail": "https://velog.velcdn.com/images/m161awm/post/ced5268c-5ba4-4721-adf1-afe077bbed86/image.png"
+      },
+      {
+        "title": "[AWS Build] ECS Fargate 기반 웹 서비스 인프라 구축",
+        "link": "https://velog.io/@m161awm/AWS-Build-Chall-ECS",
+        "tags": [
+          "Fargate",
+          "aws",
+          "challenge",
+          "메모",
+          "일상"
+        ],
+        "thumbnail": "https://velog.velcdn.com/images/m161awm/post/7e9a4504-fc99-4da7-a646-e79b9eb7de29/image.jpg"
+      }
+    ]
+  }
+]

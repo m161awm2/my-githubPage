@@ -6,8 +6,5 @@
   "scripts": {
     "fetch:velog": "node scripts/fetch-velog.js",
     "fetch:github-pins": "node scripts/fetch-github-pins.js"
-  },
-  "dependencies": {
-    "fast-xml-parser": "^5.8.0"
   }
 }

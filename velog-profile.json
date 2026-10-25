@@ -3,9 +3,8 @@
   "title": "cloud.m161awm",
   "description": "Velog에 기록한 개발 학습 로그입니다.",
   "url": "https://velog.io/@m161awm",
-  "rssUrl": "https://v2.velog.io/rss/m161awm",
-  "postCount": 20,
-  "totalLikes": 30,
+  "postCount": 38,
+  "totalLikes": 49,
   "latestPost": {
     "title": "[Apache Kafka] Kafka Data Streaming",
     "link": "https://velog.io/@m161awm/Apache-Kafka",

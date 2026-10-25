@@ -19,7 +19,7 @@ fetch('projects.json', { cache: 'no-cache' }).then(r => r.json()).then(items => 
 }).catch(() => {});
 
 fetch('posts.json', { cache: 'no-cache' }).then(r => r.json()).then(items => {
-  $('#postGrid').innerHTML = items.slice(0, 6).map(item => `<a class="data-card" href="${safeUrl(item.link || item.url)}" target="_blank" rel="noreferrer"><span class="meta">VELOG NOTE</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description || item.summary || '기술을 공부하며 남긴 기록입니다.')}</p><span class="arrow">글 읽기 ↗</span></a>`).join('');
+  $('#postGrid').innerHTML = items.slice(0, 6).map(item => `<a class="data-card" href="${safeUrl(item.link || item.url)}" target="_blank" rel="noreferrer">${item.thumbnail ? `<img class="post-thumb" src="${safeUrl(item.thumbnail)}" alt="" loading="lazy" />` : ''}<span class="meta">VELOG NOTE</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description || item.summary || '기술을 공부하며 남긴 기록입니다.')}</p><span class="arrow">글 읽기 ↗</span></a>`).join('');
 }).catch(() => {});
 
 fetch('links.json', { cache: 'no-cache' }).then(r => r.json()).then(items => {
@@ -29,33 +29,28 @@ fetch('links.json', { cache: 'no-cache' }).then(r => r.json()).then(items => {
 const canvas = $('#previewCanvas');
 const graphPanel = $('#networkPreview');
 const graphDetail = $('#networkDetail');
-const graphColors = { core:'#2563eb', cloud:'#0ea5e9', ops:'#059669', code:'#7c3aed', data:'#ea580c' };
-const graphData = [
-  ['Ku Bonmu','core','Cloud · DevOps · Backend · Data Engineering',0,0,16],
-  ['Cloud & Infrastructure','cloud','Kubernetes · AWS · Docker',-210,-105,11],
-  ['Languages & Backend','code','Python · Go · Gin · PostgreSQL',205,-105,11],
-  ['DevOps & Tools','ops','GitHub Actions · Git',0,145,11],
-  ['Data Engineering','data','Apache Spark · Data Pipeline',240,135,11],
-  ['Kubernetes','cloud','Container Orchestration',-430,-220,9],
-  ['AWS','cloud','Cloud Infrastructure',-430,-85,8],
-  ['Docker','cloud','Container · Image',-365,55,8],
-  ['Python','code','Programming Language',350,-255,8],
-  ['Go','code','Programming Language',510,-220,8],
-  ['Gin','code','Go Web Framework',450,-115,8],
-  ['PostgreSQL','code','Relational Database',485,5,9],
-  ['Apache Spark','data','Distributed Data Processing · Data Pipeline',435,175,9],
-  ['GitHub Actions','ops','CI · CD · Automation',-145,250,8],
-  ['Git','ops','Version Control',145,250,8]
-];
-const graphLinks = [
-  [0,1],[0,2],[0,3],[0,4],
-  [1,5],[1,6],[1,7],
-  [2,8],[2,9],[2,10],[2,11],
-  [3,13],[3,14],
-  [4,12],
-  [5,7],[9,10],[8,12],[13,14]
-];
-const nodes = graphData.map(([label,type,tags,x,y,r]) => ({label,type,tags,x,y,r,vx:0,vy:0}));
+const graphPalette = ['#0ea5e9','#7c3aed','#059669','#ea580c','#db2777','#ca8a04','#0891b2','#4f46e5'];
+const nodes = [{label:'Ku Bonmu',color:'#2563eb',core:true,tags:'Velog Series',x:0,y:0,r:16,vx:0,vy:0}];
+const graphLinks = [];
+const postLabel = title => (String(title).match(/^\[([^\]]+)\]/)?.[1] || String(title)).slice(0,24);
+
+function buildSeriesGraph(seriesList) {
+  const count = seriesList.length;
+  nodes[0].tags = seriesList.map(series => series.name).join(' · ') || 'Velog Series';
+  seriesList.forEach((series, seriesIndex) => {
+    const angle = Math.PI + Math.PI*2*seriesIndex/Math.max(1,count), color = graphPalette[seriesIndex % graphPalette.length];
+    const seriesNode = nodes.push({label:series.name,color,tags:`${series.posts.length}개의 글 · Velog Series`,link:series.url,x:Math.cos(angle)*230,y:Math.sin(angle)*150,r:11,vx:0,vy:0}) - 1;
+    graphLinks.push([0,seriesNode]);
+    series.posts.forEach((post, postIndex) => {
+      const spread = series.posts.length > 1 ? (postIndex/(series.posts.length-1) - .5)*1.4 : 0;
+      const postNode = nodes.push({label:postLabel(post.title),color,tags:post.title,link:post.link,x:Math.cos(angle+spread)*430,y:Math.sin(angle+spread)*240,r:8,vx:0,vy:0}) - 1;
+      graphLinks.push([seriesNode,postNode]);
+    });
+  });
+  resetGraph();
+}
+
+fetch('series.json', { cache: 'no-cache' }).then(r => r.json()).then(buildSeriesGraph).catch(() => {});
 const view = { x:0, y:0, scale:1 };
 let draggedNode = -1;
 let selectedNode = -1;
@@ -64,7 +59,8 @@ let placeholder = null;
 let resizingGraph = false;
 let resizeZoomRatio = 1;
 
-const fitScale = rect => Math.max(.34, Math.min((rect.width - 70) / 1040, (rect.height - 74) / 570));
+const graphExtent = () => nodes.reduce((extent,node) => ({x:Math.max(extent.x,Math.abs(node.x)),y:Math.max(extent.y,Math.abs(node.y))}),{x:200,y:120});
+const fitScale = rect => { const extent = graphExtent(); return Math.max(.34, Math.min(1.3, (rect.width - 70) / (extent.x*2 + 160), (rect.height - 74) / (extent.y*2 + 90))); };
 const toScreen = (node, rect) => ({x:rect.width/2 + view.x + node.x*view.scale, y:rect.height/2 + view.y + node.y*view.scale});
 
 function resetGraph() {
@@ -78,6 +74,9 @@ function updateGraphDetail() {
   const node = selectedNode >= 0 ? nodes[selectedNode] : nodes[0];
   graphDetail.querySelector('b').textContent = node.label;
   graphDetail.querySelector('span').textContent = node.tags;
+  const detailLink = graphDetail.querySelector('a');
+  detailLink.hidden = !node.link;
+  if (node.link) detailLink.href = safeUrl(node.link);
 }
 
 function simulateGraph() {
@@ -123,9 +122,9 @@ function drawGraph() {
     const related=selectedNode<0 || index===selectedNode || graphLinks.some(([a,b]) => (a===selectedNode&&b===index)||(b===selectedNode&&a===index));
     ctx.beginPath(); ctx.arc(point.x,point.y,radius,0,Math.PI*2);
     ctx.globalAlpha=related?1:.24;
-    ctx.shadowBlur=selectedNode>=0&&related?30:index===draggedNode?22:12; ctx.shadowColor=graphColors[node.type]; ctx.fillStyle=graphColors[node.type]; ctx.fill(); ctx.shadowBlur=0;
-    if (view.scale>.5 || node.type==='core') {
-      ctx.fillStyle='#334155'; ctx.font=`${node.type==='core'?'700':'600'} ${Math.max(8,11*view.scale)}px Pretendard, sans-serif`; ctx.textAlign='center';
+    ctx.shadowBlur=selectedNode>=0&&related?30:index===draggedNode?22:12; ctx.shadowColor=node.color; ctx.fillStyle=node.color; ctx.fill(); ctx.shadowBlur=0;
+    if (view.scale>.5 || node.core) {
+      ctx.fillStyle='#334155'; ctx.font=`${node.core?'700':'600'} ${Math.max(8,11*view.scale)}px Pretendard, sans-serif`; ctx.textAlign='center';
       ctx.fillText(node.label,point.x,point.y+radius+Math.max(12,15*view.scale));
     }
     ctx.globalAlpha=1;

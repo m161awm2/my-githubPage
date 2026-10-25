@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Ku Bonmu의 포트폴리오" />
   <title>Ku Bonmu | DevOps</title>
-  <link rel="stylesheet" href="assets/prism.css?v=20260928" />
+  <link rel="stylesheet" href="assets/prism.css?v=20261025" />
 </head>
 <body>
   <header>
     <nav class="wrap">
       <div class="nav-links">
-        <a href="#stack">Stack</a><a href="#network">Graph</a><a href="#projects">Projects</a><a href="#posts">Velog</a><a href="#links">Links</a>
+        <a href="#network">Graph</a><a href="#projects">Projects</a><a href="#posts">Velog</a><a href="#links">Links</a>
       </div>
     </nav>
   </header>
@@ -53,23 +53,14 @@
       </article>
     </section>
 
-    <section class="wrap content-section" id="stack">
-      <div class="section-head"><h2>Tech Stack</h2></div>
-      <div class="stack-list">
-        <article><h3>Cloud & Infrastructure</h3><div class="chips"><span>Kubernetes</span><span>AWS</span><span>Docker</span></div></article>
-        <article><h3>Languages & Backend</h3><div class="chips"><span>Python</span><span>Go</span><span>Gin</span><span>PostgreSQL</span></div></article>
-        <article><h3>Data Engineering</h3><div class="chips"><span>Apache Spark</span></div></article>
-        <article><h3>DevOps & Tools</h3><div class="chips"><span>GitHub Actions</span><span>Git</span></div></article>
-      </div>
-    </section>
 
     <section class="wrap content-section" id="network">
       <div class="section-head"><h2>Interactive Node Graph</h2></div>
       <div class="network-preview" id="networkPreview">
-        <canvas id="previewCanvas" aria-label="Ku Bonmu의 기술 스택을 연결한 인터랙티브 네트워크 그래프"></canvas>
+        <canvas id="previewCanvas" aria-label="Velog 시리즈와 글을 연결한 인터랙티브 네트워크 그래프"></canvas>
         <span class="network-title">Ku Bonmu · Network</span>
         <div class="network-detail" id="networkDetail" aria-live="polite">
-          <b>Ku Bonmu</b><span>Cloud · DevOps · Backend · Data Engineering</span>
+          <b>Ku Bonmu</b><span>Velog Series</span><a href="#" target="_blank" rel="noreferrer" hidden>Velog에서 보기 ↗</a>
         </div>
         <div class="network-controls">
           <button id="zoomOut" type="button" aria-label="축소">−</button>
@@ -102,6 +93,6 @@
   </main>
 
   <footer><div class="wrap">© <span id="year"></span> Ku Bonmu. Built with AWS</div></footer>
-  <script src="assets/prism.js?v=20261014"></script>
+  <script src="assets/prism.js?v=20261025"></script>
 </body>
 </html>

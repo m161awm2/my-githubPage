@@ -3,39 +3,39 @@
     "title": "[Apache Kafka] Kafka Data Streaming",
     "link": "https://velog.io/@m161awm/Apache-Kafka",
     "pubDate": "Wed, 21 Oct 2026 11:53:15 GMT",
-    "description": "카프카를 먼저 설명하기 전 pub/sub 개념을 설명하는게 좋겠다. publish는 카프카로 메시지를 보내는 원천, 카프카 생태계에선 프로듀서 라고 부른다, 그리고 subcribe는 그 받은 메시지를 다운스트림으로 보내는걸 컨슈머 라고 부른다. 카프카에서 이러한 과정을 브로커 라고 부르는데 이와 같은 뜻으로 메시지를 주고받는다 해서 메시지 브로커라고 부른다. 카프카는 데이터 엔지니어링만을 위...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/c0b3bccb-da82-4c11-a2b6-a7981c8c0156/image.png",
+    "description": "크래프트(KafkaRaft)설치와 더불어 카프카의 클러스터와 토픽과 파티션에 대해 다루는 글입니다.",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/8bfd3d7f-07dd-4e30-bc33-beaf8d878ca1/image.png",
     "likes": 0
   },
   {
     "title": "[Apache Spark] ETL Transform",
     "link": "https://velog.io/@m161awm/Apache-Spark",
     "pubDate": "Tue, 13 Oct 2026 00:51:13 GMT",
-    "description": "Apache Spark 이란? 데이터 엔지니어링 파이프라인의 Transform, 즉 변환단계를 담당하는 핵심 빅데이터 분산 컴퓨팅 프레임워크 이다. 데이터 엔지니어링은 사람의 판단이 매우 중요한 분야이다 무슨 소리냐면 클라이언트한테 역 ETL로 보내야하는데 다운스트림 스토리지가 데이터레이크(S3)라면 배치방식으로 진행되어 UX가 파괴되는 상황이 발생한다. AWS Redshift나 BigQue...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/a29dfabd-9d09-4c8c-91a2-e9ff982784da/image.png",
+    "description": "빅데이터 분산 컴퓨팅 프레임워크인 아파치 스파크에대해 다룹니다",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/9dccc29d-8a0a-46f1-90cc-5244ab23faef/image.png",
     "likes": 0
   },
   {
     "title": "[Code Review] 복잡한 Gin 백엔드 코드 분석하기",
     "link": "https://velog.io/@m161awm/Code-Review-Gin",
     "pubDate": "Sat, 03 Oct 2026 15:16:55 GMT",
-    "description": "리뷰할 백엔드 레포지토리 https://github.com/m161awm2/velocity-bulletinBE/blob/main/cmd/server/main.go main.go 파일을 먼저 확인해본다. logger := log.New(os.Stdout, &quot;&quot;, log.LstdFlags) cfg, err := config.Load() // 환경변수를 읽어 Config 구조체에...",
-    "thumbnail": "",
+    "description": "코드 리뷰, 해당 웹 서비스가 작동하는 방식을 짧고 간단히 분석하다.",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/ced5268c-5ba4-4721-adf1-afe077bbed86/image.png",
     "likes": 1
   },
   {
     "title": "[AWS Build] ECS Fargate 기반 웹 서비스 인프라 구축",
     "link": "https://velog.io/@m161awm/AWS-Build-Chall-ECS",
     "pubDate": "Mon, 28 Sep 2026 15:17:25 GMT",
-    "description": "인프라 레포지토리 확인 백엔드 레포지토리 확인 기타 자료 사실 이전에도 한 번 만들었지만, VPC Origin의 프리 티어 제한 때문에 중간에 그만둔 사연이 있다. 그래서 기존 아키텍처에서 크게 바뀐 것은 Internal ALB 대신 Public ALB를 사용한다는 점이다. VPC / 서브넷 / 라우팅 테이블 구축 사실 중요한 과정은 아니라서 CIDR 정도만 간략하게 적겠다. VPC CIDR...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/73827ad2-c7b7-4baa-9efb-dab785f6a923/image.png",
+    "description": "AWS 빌드 일기",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/7e9a4504-fc99-4da7-a646-e79b9eb7de29/image.jpg",
     "likes": 0
   },
   {
     "title": "AI가 만들었는데 면접관이 코드 설명 해보라고 하면 어떻게 해야 할까?",
     "link": "https://velog.io/@m161awm/AI%EA%B0%80-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8A%94%EB%8D%B0-%EB%A9%B4%EC%A0%91%EA%B4%80%EC%9D%B4-%EC%BD%94%EB%93%9C-%EC%84%A4%EB%AA%85-%ED%95%B4%EB%B3%B4%EB%9D%BC%EA%B3%A0-%ED%95%98%EB%A9%B4-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C",
     "pubDate": "Sun, 20 Sep 2026 11:02:04 GMT",
-    "description": "서론 2026년 9월 기준 사람은 코드를 치면서 개발하지 않는다. AI/LLM 시대에 입문한 고등학생 개발자로서 나는 코덱스(Codex)나 클로드 코드(Claude Code)를 사용해보면서 한 가지 의문이 들었다. &quot;개발자가 왜 필요한 거지?&quot; 단순 개발은 지나가는 초등학생한테 LLM 에이전트를 주고 코딩을 시켜서 굉장한 작품을 만들 수 있을 정도로 많이 발전했고, 나는 이...",
+    "description": "단순 AI가 짜서 모른다고 하지말자!",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/c874eabd-bda2-4677-8383-42d0fe007f67/image.png",
     "likes": 9
   },
@@ -43,7 +43,7 @@
     "title": "NAT, VPN, Reverse/Forward Proxy 그리고 API Gateway",
     "link": "https://velog.io/@m161awm/NAT-VPN-Reverse-Proxy-VS-Forward-Proxy",
     "pubDate": "Sun, 13 Sep 2026 15:32:37 GMT",
-    "description": "서론 우리가 네트워크를 공부 할 때에 가장 헷갈리는 용어인 NAT, VPN, 리버스 프록시와 포워드 프록시를 알아보겠다. Network Address Translation Network Address Translation, 줄여서 NAT라고 한다. 먼저 공유기가 하는 일을 알아보면 좋다, 공유기는 CIDR이 /24 라고 치자면, 256개의 사설 IP를 가질 수 있다. 그 사설 IP가 한 공유...",
+    "description": "서론 우리가 네트워크를 공부 할 때에 가장 헷갈리는 용어인 NAT, VPN그리고 리버스 프록시와 포워드 프록시를 알아보겠다. Network Address Translation Network Address Translation, 줄여서 NAT라고 한다. 프라이빗 IP",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/7926ac13-6e38-43e4-92d0-1fbcfb996fcf/image.png",
     "likes": 0
   },
@@ -51,63 +51,63 @@
     "title": "Gin (진) 프레임워크",
     "link": "https://velog.io/@m161awm/Gin-%EC%A7%84-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC",
     "pubDate": "Mon, 24 Aug 2026 07:59:56 GMT",
-    "description": "Go언어의 가장 대표적인 웹 프레임워크인, Gin에 대해 알아보겠다 https://gin-gonic.com/en/docs/ 해당 문서를 참조하세요. 소개 Go언어의 빠른 속도와 비교적 간단한 사용법으로 차세대 웹 프레임워크라고 불리고있는 프레임워크중 하나이다. 자바의 스프링부트, nodejs계열과 다르게 램을 많이 안잡아먹어 인프라 환경에서도 좋은편이다. 사용시 Go가 필수적으로 설치되어있어...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/fab66099-3162-404e-adf6-ee55977a7bce/image.png",
+    "description": "Go언어의 가장 대표적인 웹 프레임워크인, Gin에 대해 알아보겠다 https://gin-gonic.com/en/docs/ 해당 문서를 참조하세요. 소개 Go언어의 빠른 속도와 비교적 간단한 사용법으로 차세대 웹 프레임워크라고 불리고있는 프레임워크중 하나이다. 자바의 스프링부트, nodejs계열과 다르게 램을 많이 안잡아먹어 인프라 환경에서도 좋은편이...",
+    "thumbnail": "",
     "likes": 0
   },
   {
     "title": "[k8s] Gateway API",
     "link": "https://velog.io/@m161awm/k8s-%EC%9D%B4%EC%A0%9C-msa%ED%99%98%EA%B2%BD%EC%97%90%EC%84%A0-%EC%9D%B8%EA%B7%B8%EB%A0%88%EC%8A%A4%EB%A5%BC-%EC%95%88%EC%93%B4%EB%8B%A4.-Gateway-API-%EA%B5%AC%EC%B6%95%ED%95%B4%EB%B3%B4%EA%B8%B0",
     "pubDate": "Mon, 17 Aug 2026 13:21:23 GMT",
-    "description": "예전에 Ingress를 썼던 이유 게이트웨이 API를 설명하기 전, 쿠버네티스 인그레스(Ingress)의 역사를 먼저 얘기 해보겠다. 2023년 게이트웨이 API를 사용하기 전, k8s사용자들은 인그레스라는걸 많이 사용했었다. 인그레스를 왜 사용했었냐 하면 안정적이게 외부 사용자들을 서비스로 보내는 역할도 함과 동시에 TLS인증서를 발급받거나, 디플로이먼트와의 라우트 연결을 위해 해석하는 역...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/530bfcab-1a7b-4259-b4c1-b8a9f539ed94/image.png",
+    "description": "예전에 Ingress를 썼던 이유 게이트웨이 API를 설명하기 전, 쿠버네티스 인그레스(Ingress)의 역사를 먼저 얘기 해보겠다. 2023년 게이트웨이 API를 사용하기 전, k8s사용자들은 인그레스라는걸 많이 사용했었다. 인그레스를 왜 사용했었냐 하면 안정",
+    "thumbnail": "",
     "likes": 0
   },
   {
     "title": "KIND(Kubernetes IN Docker)를 활용하여 Github actions를 통해 EKS로 배포하기",
     "link": "https://velog.io/@m161awm/KINDKubernetes-IN-Docker%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%98%EC%97%AC-Github-actions%EB%A5%BC-%ED%86%B5%ED%95%B4-EKS%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0",
     "pubDate": "Sat, 01 Aug 2026 11:05:16 GMT",
-    "description": "이번 글에서는 NestJS 애플리케이션을 Docker 이미지로 만든 뒤 다음 순서로 배포한다. Pull Request 또는 main 브랜치 push가 발생한다. GitHub Actions 러너 안에 KIND 클러스터를 만든다. 같은 이미지를 KIND에 먼저 배포하고 실제 HTTP 응답까지 검사한다. KIND 검증을 통과한 main push만 AWS OIDC로 인증한다. 이미지를 Amazon...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/bcfcf0b7-03c2-44d4-b59d-000b94bd0d93/image.png",
+    "description": "KIND(Kubernetes IN Docker) 란? 쿠버네티스 안에 들어간 도커, 말 그대로 여기서는 노드가 도커의 컨테이너이다. 그래서 미니큐브와 다르게 단일 노드가 아니고 여러 노드를 넣을수가 있다. KIND를 사용하는 다른 이유는 CI/CD에 매우 용이하다는",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/8147e7be-07a0-4884-9d3a-df1e4780f683/image.png",
     "likes": 1
   },
   {
     "title": "k8sGame에 대해.araboja + 한국어 배포판",
     "link": "https://velog.io/@m161awm/k8sGame%EC%97%90-%EB%8C%80%ED%95%B4.araboja-%ED%95%9C%EA%B8%80-%ED%8C%A8%EC%B9%98",
     "pubDate": "Sat, 04 Jul 2026 11:15:54 GMT",
-    "description": "인스타를 보던 중 재미있는 게시글을 보았다! https://github.com/rohitg00/k8sgames k8s를 게임처럼 할 수 있다고?? 바로 들어가보았다. 캠페인이 아마 문제를 푸는탭인것같은데 들어가보겠다. Click palette = 리소스 선택/배치 Drag resource = 리소스 드래그 이동 Click resource = 리소스 정보 확인 Right-click = 스케일/...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/a51237f4-2860-457e-b2e9-f08984bfe99f/image.png",
+    "description": "인스타를 보던 중 재미있는 게시글을 보았다! https://github.com/rohitg00/k8sgames k8s를 게임처럼 할 수 있다고?? 바로 들어가보았다. 캠페인이 아마 문제를 푸는탭인것같은데 들어가보겠다. > Click palette = 리소스",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/e7a034ea-5bfe-4695-9b54-a28871deb1d8/image.png",
     "likes": 2
   },
   {
     "title": "AWS SSM으로 프라이빗 서브넷에 있는 EC2에 들어가보기",
     "link": "https://velog.io/@m161awm/AWS-SSM-%EC%A0%95%EC%B1%85%EC%9C%BC%EB%A1%9C-%ED%94%84%EB%9D%BC%EC%9D%B4%EB%B9%97-%EC%84%9C%EB%B8%8C%EB%84%B7%EC%97%90-%EC%9E%88%EB%8A%94-EC2%EC%97%90-%EB%93%A4%EC%96%B4%EA%B0%80%EB%B3%B4%EA%B8%B0",
     "pubDate": "Fri, 12 Jun 2026 13:08:05 GMT",
-    "description": "기존의 바스티온 호스트를 만들어 ssh로 접근하는 방식은 귀찮고 구시대적이다. 그래서 나온 서비스가 바로 AWS Systems Manager, SSM이다. 근데 왜 ASM이 아니라 SSM이냐 하면 원래 이름이 Simple Systems Manager였다고 한다. 왜 해당 방식을 더 선호하게 되었냐면 바스천 호스트를 만들었을때 비용도 있고 꽤 많은 문제점이 있어서 이제 SSM을 활용해서 ec2...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/422fbfc7-0ef0-4046-8302-de52380755c4/image.png",
+    "description": "기존의 바스티온 호스트를 만들어 ssh로 접근하는 방식은 귀찮고 구시대적이다. 그래서 나온 서비스가 바로 AWS Systems Manager, SSM이다. 근데 왜 ASM이 아니라 SSM이냐 하면 원래 이름이 Simple Systems Manager였다고 한다. 왜",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/b3d02b39-a47f-4e89-b498-fb35cdb10a9e/image.png",
     "likes": 0
   },
   {
     "title": "S3와 클라우드 프론트를 활용해 정적 웹페이지를 배포하기",
     "link": "https://velog.io/@m161awm/S3%EC%99%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%ED%94%84%EB%A1%A0%ED%8A%B8%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%B4-%EC%A0%95%EC%A0%81-%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%80%EB%A5%BC-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0",
     "pubDate": "Tue, 02 Jun 2026 14:55:26 GMT",
-    "description": "전의 나는 깃허브에서 무료로 정적 호스팅을 해주길래 배포하고 써왔다. 하지만 큰 문제는 클라우드 프론트를 쓰는게 더 멋있다는것이다. 그래서 이번회차에 해볼건 바로 S3와 클라우드 프론트 서비스를 활용하여 배포까지 하는 과정을 해보겠다. 그전 먼저 두 서비스가 뭔지를 알아야한다. 자세한 내용은 해당 노션을 참조 바란다, 간단하게 설명해주자면 Simple Strage Service S3는 버킷이...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/5cd608e6-2c5c-4688-91f2-9bc0d39e55f3/image.png",
+    "description": "전의 나는 깃허브에서 무료로 정적 호스팅을 해주길래 배포하고 써왔다. 하지만 큰 문제는 클라우드 프론트를 쓰는게 더 멋있다는것이다. 그래서 이번회차에 해볼건 바로 S3와 클라우드 프론트 서비스를 활용하여 배포까지 하는 과정을 해보겠다. 그전 먼저 두 서비스가 뭔지를",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/d3348080-94ab-47c8-862e-907fecd3d4fc/image.png",
     "likes": 0
   },
   {
     "title": "Terraform 01",
     "link": "https://velog.io/@m161awm/Terraform-01",
     "pubDate": "Wed, 13 May 2026 15:52:41 GMT",
-    "description": "IaC(infrastructure as code) 도구인 테라폼, 드디어 시작하게 될것같다. 기존엔 AWS에서 직접 마우스를 움직여 서비스를 만들고 운영했지만 이젠 인프라를 직접 키보드로 구축해줄것이다. 먼저 설치를 해주겠다. brew tap hashicorp/tap brew install hashicorp/tap/terraform 기본 형식은 이렇다는데 해석을 해봐야겠다. resource...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/6044dafb-5d34-4da6-ace3-eca67a21f47a/image.png",
+    "description": "IaC(infrastructure as code) 도구인 테라폼, 드디어 시작하게 될것같다. 기존엔 AWS에서 직접 마우스를 움직여 서비스를 만들고 운영했지만 이젠 인프라를 직접 키보드로 구축해줄것이다. 먼저 설치를 해주겠다. brew tap hashicorp/",
+    "thumbnail": "",
     "likes": 1
   },
   {
     "title": "(긴급!) 지금 절대로 코덱스를 다운로드 하지마세요 .",
     "link": "https://velog.io/@m161awm/%EA%B8%B4%EA%B8%89-%EC%A7%80%EA%B8%88-%EC%A0%88%EB%8C%80%EB%A1%9C-%EC%BD%94%EB%8D%B1%EC%8A%A4%EB%A5%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%95%98%EC%A7%80%EB%A7%88%EC%84%B8%EC%9A%94",
     "pubDate": "Sun, 10 May 2026 08:19:42 GMT",
-    "description": "이 글은 LLM과 함께 제작되었습니다 맥에서 코덱스를 다운로드 하려고 하던 중 바로 사파리에 codex를 검색하여 맨 위에 있는 사이트에 접속하였다 당연히 OpenAI Codex를 다운로드하는 것처럼 보였다. 하지만... 복사하고 터미널에 붙혀넣기전 갑가지 수상한 명령어를 보고 즉시 중단하였다. echo \"Downloading Codex: https://chatgpt.com/codex-app...",
+    "description": "이 글은 LLM과 함께 제작되었습니다맥에서 코덱스를 다운로드 하려고 하던 중 바로 사파리에 codex를 검색하여 맨 위에 있는 사이트에 접속하였다 당연히 OpenAI Codex를 다운로드하는 것처럼 보였다. 하지만... 복사하고 터미널에 붙혀넣기전 갑가지 수상한 명령",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/1525e177-5d7a-4881-8dda-2344f13076ce/image.png",
     "likes": 12
   },
@@ -115,23 +115,23 @@
     "title": "NestJs를 활용해 S3에 이미지를 업로드하기",
     "link": "https://velog.io/@m161awm/NestJs%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%B4-S3%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0",
     "pubDate": "Mon, 04 May 2026 12:20:47 GMT",
-    "description": "S3란? AWS에 기본적인 서비스라고 하면 S3라는 서비스가 있다 Simple Storage Service S가 3개 있다고 해서 S3라고 부른다 S3에는 이미지 뿐만 아니라 프론트엔드나 다른것도 업로드 하고 보여줄수 있다. 다른 서비스와 달리 외부 에서 꺼내오고 넣는 방식으로 사용된다. 구축 먼저 인프라를 구축해주겠다. 편하려면 리전을 먼저 바꿔주자 VPC를 먼저 만들어주겠다. 이제 서브넷...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/6fbc059a-7e92-4e8b-9afb-a02f119a405e/image.png",
+    "description": "AWS에 기본적인 서비스라고 하면 S3라는 서비스가 있다 Simple Storage Service S가 3개 있다고 해서 S3라고 부른다 S3에는 이미지 뿐만 아니라 프론트엔드나 다른것도 업로드 할 수 있다 먼저 인프라를 구축해주겠다.",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/a0b8b717-fa9e-4c36-bf2c-abcbdf37c92f/image.png",
     "likes": 1
   },
   {
     "title": "AWS 탄력적 IP",
     "link": "https://velog.io/@m161awm/AWS-%ED%83%84%EB%A0%A5%EC%A0%81-IP",
     "pubDate": "Sat, 02 May 2026 15:22:41 GMT",
-    "description": "EC2를 재부팅 하고 내 도메인 주소인 m161awm.kr로 들어가보니 찾지못하였다, 원인을 확인해보니 퍼블릭 IP주소가 바뀌어져있었다. 대체 왜 바꾼건지 궁금해서 찾아본 결과 현재 IPv4가 고갈되어서 이 IP주소를 사용 안하면 다른 서버에 넘겨주려고 인스턴스를 재부팅 한다면 공인 IP가 바뀌는것이다. 그래서 재부팅 해도 바뀌지 않게 해줄수 있는건 탄력적 IP이다. EC2 => 인스턴스 =...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/281f3242-23fe-4454-a41f-3759cec98ae5/image.png",
+    "description": "EC2를 재부팅 하고 내 도메인 주소인 m161awm.kr로 들어가보니 찾지못하였다,원인을 확인해보니 퍼블릭 IP주소가 바뀌어져있었다.대체 왜 바꾼건지 궁금해서 찾아본 결과 현재 IPv4가 고갈되어서 이 IP주소를 사용 안하면 다른 서버에 넘겨주려고 인스턴스를 재부팅",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/805f714e-5564-4daa-9bb1-019d00c3dc7b/image.png",
     "likes": 0
   },
   {
     "title": "NestJs 02",
     "link": "https://velog.io/@m161awm/NestJs-02",
     "pubDate": "Sun, 26 Apr 2026 14:46:34 GMT",
-    "description": "NestJs 지난회차에선 NestJs install, TS에 대해 알아보았다. 그러면 이제 써보고 실행해봐야한다. @Get(&#39;경로&#39;) // 비우면 &#39;/&#39;와 같다 함수명(){ return &quot;아무글&quot;; } 이런식으로 Get 요청을 받을수 있다. 플라스크와 비슷하다고도 볼수있다. 해당 경로로 가면 함수가 실행 그리고 타입스크립트니깐 함수명: strin...",
+    "description": "이런식으로 Get 요청을 받을수 있다.플라스크와 비슷하다고도 볼수있다.해당 경로로 가면 함수가 실행그리고 타입스크립트니깐 함수명: string 이렇게 해줘야 정석이다.플라스크와 다르게 jsonify 이런 모듈을 불러올 필요가 없다.바로 json형식으로 알아서 보내주기때",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/384bbe54-fac7-4b96-a68b-1d299febc2e5/image.png",
     "likes": 1
   },
@@ -139,7 +139,7 @@
     "title": "NestJs 01",
     "link": "https://velog.io/@m161awm/NestJs-01",
     "pubDate": "Sat, 25 Apr 2026 17:41:59 GMT",
-    "description": "TS 어디서 많이 본 것 같은 이 단어는.. 타입스크립트 라고 불러야한다. 먼저 바로 NestJs를 들어가는것보단 이 프로그래밍 언어를 알아보는게 중요할것같다. NestJs 프레임워크는 타입스크립트로 작성된다. 타입스크립트란 Js와 문법은 아주 비슷하지만 큰 차이점인 타입을 표기해줘야한다.(변수,클래스,메서드, 스트럭트 등등) JS와 달리 안전하고 에러를 방지할 수 있다. 내가 자바스크립트를...",
+    "description": "어디서 많이 본 것 같은 이 단어는.. 타입스크립트 라고 불러야한다. 먼저 바로 NestJs를 들어가는것보단 이 프로그래밍 언어를 알아보는게 중요할것같다.NestJs 프레임워크는 타입스크립트로 작성된다. 타입스크립트란 Js와 문법은 아주 비슷하지만 큰 차이점인 타입을",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/429a6216-173b-4be9-b002-70012fca480d/image.png",
     "likes": 1
   },
@@ -147,16 +147,160 @@
     "title": "AWS 안전한 인프라 구축하기",
     "link": "https://velog.io/@m161awm/AWS-%EC%95%88%EC%A0%84%ED%95%9C-%EC%9D%B8%ED%94%84%EB%9D%BC-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0",
     "pubDate": "Thu, 23 Apr 2026 14:16:57 GMT",
-    "description": "AWS 사용까지 1개월 조금 안됐지만 나도 대회 나가고싶어서 하게되었다. 기존까진 그냥 EC2를 만든 후 AWS가 자동으로 VPC만들고, RDS를 붙혀오는 방식이였다. 근데 이런식이면 누가 클라우드 엔지니어라고 인정을 하겠나 그래서 내가 할 수 있는 한 직접 클라우드 인프라를 구축해볼것이다. 첫번째로 VPC를 만드는거다, VPC는 스위치라고 볼 수 있을정도로 비슷한 부분이 많다, 서비스(기기...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/7b7a6923-d5b9-4bf0-9c65-1aea41b3dca3/image.png",
+    "description": "기존까진 그냥 EC2를 만든 후 AWS가 자동으로 VPC만들고, RDS를 붙혀오는 방식이였다. 근데 이런식이면 누가 클라우드 엔지니어라고 인정을 하겠나 그래서 내가 할 수 있는 한 직접 클라우드 인프라를 구축해볼것이다. 첫번째로 VPC를 만드는거다, VPC는 스위",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/ad70a864-ba9f-41fa-9752-9699e5ca95aa/image.png",
     "likes": 1
   },
   {
     "title": "AWS Route 53, ELB, SSL 인증",
     "link": "https://velog.io/@m161awm/AWS-Route-53-ELB-SSL-%EC%9D%B8%EC%A6%9D",
     "pubDate": "Thu, 09 Apr 2026 11:21:43 GMT",
-    "description": "Route 53 AWS의 DNS 서비스이다. DNS의 포트 번호가 53 이라 이 서비스의 이름을 Route 53이라고 지은것이다. 아키텍쳐(?)를 그려봤는데 이 퍼블릭 IP로 접근하면 내 엔진엑스 EC2 서버로 접근되면서 잘 작동 할거다. 근데 DNS도 포트번호가 있는데 이상하게 EC2 보안그룹 설정을 안해줘도 된다. 왜냐하면 DNS 프로그램은 EC2랑 접촉을 안하기 때문에 보안그룹 설정을...",
-    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/ff8fb36f-d498-4c01-ab7f-8a4908c1a8ca/image.png",
+    "description": "Route 53 AWS의 DNS 서비스이다. DNS의 포트 번호가 53이라 이 서비스의 이름을 Route 53이라고 지은것이다. 아키텍쳐(?)를 그려봤는데 이 퍼블릭 IP로 접근하면 내 엔진엑스 EC2 서버로 접근되면서 잘 작동 할거다. 근데 DNS도 포트번호",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/f9ac7588-014b-49d8-b2f0-3757286a2c37/image.jpg",
     "likes": 0
+  },
+  {
+    "title": "MySql",
+    "link": "https://velog.io/@m161awm/MySql",
+    "pubDate": "Fri, 27 Mar 2026 11:43:23 GMT",
+    "description": "대표적인 DBMS중 하나인 MySql! 기존에 내가 쓰던 sqlite3와 비교가 안된다. 기존에 쓰던 sqlite3은 데이터베이스 파일을 내 컴퓨터에 파일로 저장하는 방식이였다면 mysql은",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/3e84c3ad-3d71-4b4c-8b5b-b15296ad4987/image.png",
+    "likes": 1
+  },
+  {
+    "title": "AWS RDS",
+    "link": "https://velog.io/@m161awm/AWS-RDS",
+    "pubDate": "Thu, 26 Mar 2026 12:51:18 GMT",
+    "description": "데브옵스 분야의 핵심! RDS를 써보자!!!!그 전에는 sqlite를 사용하여 DB가 EC2 안에 있었지만이제 mysql로 바꿔서 RDS를 사용할수 있게되었다!첫번째 고난은 그 전에 있었던 프레임워크 코드를 sqlite에서 mysql문법으로 바꾸는거였다, 아주 크게 다",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/f454eed7-1ad6-4f61-be87-fd20949b7590/image.png",
+    "likes": 1
+  },
+  {
+    "title": "AWS EC2",
+    "link": "https://velog.io/@m161awm/AWS-EC2-7nodr5nn",
+    "pubDate": "Sat, 21 Mar 2026 06:09:44 GMT",
+    "description": "웹 서버랑 플라스크 서버를 만들었을때 큰 문제 하나가 있었다바로 컴퓨터를 끄거나 리눅스 터미널을 닫으면 즉시 서버가 닫힌다는거였다...그래서 내가 하고싶었던게 24시간동안 서버를 운영하는거였다AWS는 계정 활성화가 끝나야 EC2 같은 서비스를 정상적으로 사용할 수 있어",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/2c55fe88-bf91-4a84-9ca2-e3a273c75bb5/image.png",
+    "likes": 0
+  },
+  {
+    "title": "SQLite",
+    "link": "https://velog.io/@m161awm/SQLite",
+    "pubDate": "Wed, 18 Mar 2026 15:13:04 GMT",
+    "description": "SQLite란, 파이썬이 기본으로 지원하는 모듈중 하나인 sql중 하나이다. Flask 이 모듈 하나때문에... 나도 왠지 모르게 풀스택 개발자가 되어가고있다, 조금 욕심 내서 바로 Mysql 배울까 생각했는데 배우다가 빡치면 바로 포기하는 내 성격때문에 기초적인 SQLite을 배워야겠다. 그리고 웹개발 제대로 하려면 진짜 풀스택이 필수라 느꼈다,...",
+    "thumbnail": "",
+    "likes": 0
+  },
+  {
+    "title": "git 02",
+    "link": "https://velog.io/@m161awm/git-02",
+    "pubDate": "Sun, 15 Mar 2026 14:31:29 GMT",
+    "description": "이제 파일들을 GitHub에 직접 올릴 차례이다. git remote add origin https://github.com/아이디/레포.git 이렇게 레포를 생성 한 뒤에 깃허브로 직접 연결할 수 있다. git push 를 터미널에 입력하면, 인증을 한 뒤 레포",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/f9a194e6-4492-4229-b4de-2b386b50a5fb/image.png",
+    "likes": 0
+  },
+  {
+    "title": "CI/CD 01",
+    "link": "https://velog.io/@m161awm/CICD-01",
+    "pubDate": "Sat, 14 Mar 2026 14:19:08 GMT",
+    "description": "나도 슬슬 인프라로 넘어갈 수 있다고 느껴서, CI/CD를 배워보려고 한다. 먼저 그나마 쉬운 CI를 배워보겠다. CI CI는 git/github에서 참사를 방지하기 위해 사용한다. 코드를 잘못 썼는데 git commit -m \"수정\"이러면 바로 코밋이 되어버리거나 깃허브에서 바로 푸시를 해버리면 좋지 않은 상황이 발생하게 되는데 CI로 검사만 할 ...",
+    "thumbnail": "",
+    "likes": 0
+  },
+  {
+    "title": "flask",
+    "link": "https://velog.io/@m161awm/flask",
+    "pubDate": "Sat, 14 Mar 2026 12:26:22 GMT",
+    "description": "줄마다 뭔 뜻인지 알아보자... from flask import Flask flask 라이브러리에서 Flask라는 기능을 가져와라app = Flask(\\_-name\\_\\_) Flask 웹앱 하나를 만들고, 그걸 app이라고 부르겠다@app.route(\"/\") 사용자가",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/a30eb5bf-3317-4f49-bad3-a0a4d741f8e9/image.png",
+    "likes": 0
+  },
+  {
+    "title": "git 01",
+    "link": "https://velog.io/@m161awm/git-01",
+    "pubDate": "Thu, 12 Mar 2026 16:17:14 GMT",
+    "description": "git commit을 하면 스테이징한 파일이 repository에 들어간다.한번에 많은 파일을 스테이징 하려면,이런식으로 한번의 명령어로 많은 파일을 스테이징 할 수 있다.이러면 이 폴더 내에 모든 파일을 스테이징 할 수 있다.이런식으로 커밋을 한 사람의 로그를 볼 수",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/6e70152d-c8b5-4c08-bdbb-0d420b37543b/image.png",
+    "likes": 1
+  },
+  {
+    "title": "도커 배우기 03",
+    "link": "https://velog.io/@m161awm/%EB%8F%84%EC%BB%A4-%EB%B0%B0%EC%9A%B0%EA%B8%B0-03",
+    "pubDate": "Wed, 11 Mar 2026 16:32:02 GMT",
+    "description": "이미지를 생성하면 컨테이너가 생긴다. 도커 데스크탑에 가서 보면 컨테이너명을 확인 할 수 있는데 모두가 컨테이너명이 다르지만 로그를 확인 할 수 있다.나는docker logs clever_davinci를 터미널에 입력했더니데스크탑에서와 같이 로그가 뜨는걸 볼 수 있다.",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/6f99fcfe-dfec-4eee-993f-e8b82f8821b8/image.png",
+    "likes": 0
+  },
+  {
+    "title": "도커 배우기 02",
+    "link": "https://velog.io/@m161awm/%EB%8F%84%EC%BB%A4-%EB%B0%B0%EC%9A%B0%EA%B8%B0-02",
+    "pubDate": "Tue, 10 Mar 2026 17:03:39 GMT",
+    "description": "도커를 잘 사용하기 위해선 정의가 제대로 필요하다. 도커란? 웹 서버를 만들어서 배포하려는데 아마존 웹 서비스 같은곳으로 코드를 옮기고 환경설정하고 라이브러리 옮기는걸 반복하는건 당연히 귀찮다. 그래서 도커를 사용하여 옮기기 시작하였다. 도커는 OS, 환경설정의",
+    "thumbnail": "",
+    "likes": 1
+  },
+  {
+    "title": "(학교) 웹 개발 실습 01",
+    "link": "https://velog.io/@m161awm/%ED%95%99%EA%B5%90-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EC%8B%A4%EC%8A%B5-01",
+    "pubDate": "Tue, 10 Mar 2026 01:10:07 GMT",
+    "description": "HTML 태그로 줄바꿈을 가능하다.예output해당 태그를 사용하여 문단을 바꿀수 있다.한칸의 여백이 발생한다, 가독성을 위해 사용할수 있는 태그중 하나이다예output",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/118dcb57-b3e6-4af1-82c3-1fc5c21b009e/image.png",
+    "likes": 1
+  },
+  {
+    "title": "Shell script",
+    "link": "https://velog.io/@m161awm/Shell-script",
+    "pubDate": "Mon, 09 Mar 2026 16:44:45 GMT",
+    "description": "리눅스를 쓴다고 하면 무조건 배워야하는 쉘 스크립트, bash를 배워보자.우리가 리눅스를 사용할 때에 반복해야하는 과정이 있다.맨날 그 명령어만 치면 너무 귀찮고 멋이 없다.그래서 쉘 스크립트중에 bash 언어를 배워보려고 한다.배시 파일 생성 및 실행여기서 쉘 스크립",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/5adce523-b8b1-455f-89eb-10ba2b59a80a/image.png",
+    "likes": 1
+  },
+  {
+    "title": "내PC로 서버 구축 02",
+    "link": "https://velog.io/@m161awm/%EB%82%B4PC%EB%A1%9C-%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95-02",
+    "pubDate": "Sun, 08 Mar 2026 05:07:29 GMT",
+    "description": "서버 웹페이지를 띄우는것 까진 성공하였다.근데 문제점이 내 리눅스는 가상망 IP를 사용중이라 이 컴퓨터외 아무도 내 ip로 접근을 못한다.그래서 VM을 NAT에서 Briged로 바꿔야한다.NAT는 VM에서 만든 가상망이고,Briged는 내 공유기에 연결된 가상망이다VM",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/25a3282c-fafe-4149-b186-5d28b7a8f864/image.png",
+    "likes": 1
+  },
+  {
+    "title": "내PC로 서버 구축 01",
+    "link": "https://velog.io/@m161awm/%EB%82%B4PC%EB%A1%9C-%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95-01",
+    "pubDate": "Sat, 07 Mar 2026 16:00:31 GMT",
+    "description": "예전부터 해보고 싶던게 있었다. 바로 나만의 홈피를 만드는 것 하지만... 그때의 나는 아무것도 몰랐다 알려주는 사람 한명도 없었고 리눅스도 몰랐었다 지금이라도 시작하려고 이 블로그를 시작했다. 근데 문제점이 내 서버를 만드려면 호스팅이 필요한데... 나는 클라우",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/651c745c-20d0-4794-9b18-1acc03312a03/image.png",
+    "likes": 2
+  },
+  {
+    "title": "Network 03",
+    "link": "https://velog.io/@m161awm/Packet-Tracer-03",
+    "pubDate": "Sat, 07 Mar 2026 10:25:53 GMT",
+    "description": "이번에 배울건 라우터임, 모든 집에 다 있음 바로 니 와이파이를 연결하는 공유기공유기가 많은 역할도 하지만 그중에서 라우터는 밖에있는 통신 장비와 패킷을 전달함얘가 없으면 우리는 와파 ip를 못받아서 인터넷도 못쓰는거임대충 내가 옆집으로 패킷을 보낸다 하면내 pc ->",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/f799bc3d-bde7-4d58-9974-bf08de6e77d9/image.png",
+    "likes": 2
+  },
+  {
+    "title": "Network 02",
+    "link": "https://velog.io/@m161awm/Packet-Tracer-02",
+    "pubDate": "Sat, 07 Mar 2026 09:52:27 GMT",
+    "description": "지금 내가 핸드폰이 옆에있는데 두 기기 다 똑같은 와파 공유기에 연결되어 있거든?그러면 두 기기 다 ip가 같은게 아님네트워크는 구별하기 위해서 같은 와이파이를 썼더라도 기기의 ip를 조금씩 다르게함예 PC1의 ip: 192.168.100.1PC2의 ip: 192.16",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/8426a7ce-15c4-405e-9003-706f4a42e2e4/image.png",
+    "likes": 2
+  },
+  {
+    "title": "Network 01",
+    "link": "https://velog.io/@m161awm/Packet-Tracer-01",
+    "pubDate": "Fri, 06 Mar 2026 15:00:11 GMT",
+    "description": "내 진로가 클라우드 엔지니어라면 aws를 만지기 위해 네트워크를 분명히 배워야 한다...사실 중학교 3학년때 패킷트레이서를 맛보기 해본 적 있지만 크게 흥미가 가지 않아서 금방 까먹고 버렸었었다.하지만 이번에는 꼭 배워야하고 언젠가는 배워야 할 시기.PC1을 ip 19",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/cb12d153-646a-482f-a9ac-59a155cbe6b7/image.png",
+    "likes": 2
+  },
+  {
+    "title": "도커 배우기 01",
+    "link": "https://velog.io/@m161awm/%EB%8F%84%EC%BB%A4-%EB%B0%B0%EC%9A%B0%EA%B8%B0",
+    "pubDate": "Thu, 05 Mar 2026 15:06:08 GMT",
+    "description": "클라우드/데브옵스 하려면 도커가 필수라함.다른 선배님말 들어보니 온라인 강의 들을정도로 어렵다고 안함.도커 쓰는이유 실행하는 유저마다 OS가 다르거나 기본셋이 다를수가 있음 그래서 실행이 안될 프로그램을 컨테이너로 묶은 뒤에 이미지(사진 아님)으로 만들어서 실행시",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/bcbcca12-8c83-419b-abf0-4a9e4a1df94d/image.png",
+    "likes": 4
   }
 ]

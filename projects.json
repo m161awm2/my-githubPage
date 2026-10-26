@@ -19,5 +19,12 @@
     "description": "GitHub에서 프로젝트 내용을 확인해보세요.",
     "language": "GitHub",
     "stars": 0
+  },
+  {
+    "name": "FlowPliot-MCP",
+    "url": "https://github.com/m161awm2/FlowPliot-MCP",
+    "description": "\"해커톤 신입인데 만렙입니다\" 해커톤 본선 최종 제출물 vooy 에이전트가 사용자 자신의 AWS 계정에서 데이터 파이프라인을 제어할수 있게 해주는 원격 MCP 서버.",
+    "language": "Python",
+    "stars": 0
   }
 ]

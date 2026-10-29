@@ -8,7 +8,7 @@
     "likes": 3
   },
   {
-    "title": "[Apache Kafka] Kafka Data Streaming",
+    "title": "[Apache Kafka] Kafka Data Streaming #1",
     "link": "https://velog.io/@m161awm/Apache-Kafka",
     "pubDate": "Wed, 21 Oct 2026 11:53:15 GMT",
     "description": "크래프트(KafkaRaft)설치와 더불어 카프카의 클러스터와 토픽과 파티션에 대해 다루는 글입니다.",

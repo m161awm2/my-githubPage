@@ -24,6 +24,16 @@
           "빅데이터"
         ],
         "thumbnail": "https://velog.velcdn.com/images/m161awm/post/8bfd3d7f-07dd-4e30-bc33-beaf8d878ca1/image.png"
+      },
+      {
+        "title": "[Apache Kafka] Message to kafka #2",
+        "link": "https://velog.io/@m161awm/Apache-Kafka-Messages-to-Kafka-2",
+        "tags": [
+          "DE",
+          "kafka",
+          "빅데이터"
+        ],
+        "thumbnail": "https://velog.velcdn.com/images/m161awm/post/3ae5ddb1-a63f-450a-8641-22149b8c3f26/image.png"
       }
     ]
   },

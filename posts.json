@@ -3,7 +3,7 @@
     "title": "[Apache Kafka] Message to kafka #2",
     "link": "https://velog.io/@m161awm/Apache-Kafka-Messages-to-Kafka-2",
     "pubDate": "Mon, 09 Nov 2026 17:00:50 GMT",
-    "description": "이번엔 AWS EC2 환경에서 진행하겠다. AWS 하니깐 MSK(Amazon Managed Streaming for Apache Kafka)라는 서비스가 생각난다. 사실 EC2같은 인스턴스에서 직접 카프카를 설치하는 방식도 있지만 AWS에서 지원하는 카프카 서비스를 이",
+    "description": "지난 회차에서 다루지 않고 생략했던 내용들을 정리합니다.",
     "thumbnail": "https://velog.velcdn.com/images/m161awm/post/3ae5ddb1-a63f-450a-8641-22149b8c3f26/image.png",
     "likes": 0
   },

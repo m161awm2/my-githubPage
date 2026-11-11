@@ -36,10 +36,10 @@ const postLabel = title => (String(title).match(/^\[([^\]]+)\]/)?.[1] || String(
 
 function buildSeriesGraph(seriesList) {
   const count = seriesList.length;
-  nodes[0].tags = seriesList.map(series => series.name).join(' · ') || 'Velog Series';
+  nodes[0].tags = seriesList.map(series => series.name).join(' | ') || 'Velog Series';
   seriesList.forEach((series, seriesIndex) => {
     const angle = Math.PI + Math.PI*2*seriesIndex/Math.max(1,count), color = graphPalette[seriesIndex % graphPalette.length];
-    const seriesNode = nodes.push({label:series.name,color,tags:`${series.posts.length}개의 글 · Velog Series`,link:series.url,x:Math.cos(angle)*230,y:Math.sin(angle)*150,r:11,vx:0,vy:0}) - 1;
+    const seriesNode = nodes.push({label:series.name,color,tags:`${series.posts.length}개의 글 | Velog Series`,link:series.url,x:Math.cos(angle)*230,y:Math.sin(angle)*150,r:11,vx:0,vy:0}) - 1;
     graphLinks.push([0,seriesNode]);
     series.posts.forEach((post, postIndex) => {
       const spread = series.posts.length > 1 ? (postIndex/(series.posts.length-1) - .5)*1.4 : 0;

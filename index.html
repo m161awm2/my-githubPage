@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Ku Bonmu의 포트폴리오" />
   <title>Ku Bonmu | DevOps</title>
-  <link rel="stylesheet" href="assets/prism.css?v=20261025" />
+  <link rel="stylesheet" href="assets/prism.css?v=20261112b" />
 </head>
 <body>
   <header>
@@ -18,13 +18,12 @@
 
   <main id="top">
     <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://d22iqf0kbpl4e2.cloudfront.net/BW6nhK1%20-%20Imgur.png">
-        <source src="https://d22iqf0kbpl4e2.cloudfront.net/cloud_hero_loop_seamless_hq.mp4" type="video/mp4" />
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero.png">
+        <source src="assets/hero.mp4" type="video/mp4" />
       </video>
       <div class="wrap hero-copy">
         <span class="hero-kicker">Cloud Infrastructure / DevOps</span>
         <h1>Ku Bonmu</h1>
-        <p>AWS · Kubernetes</p>
       </div>
     </section>
 
@@ -42,7 +41,6 @@
       </div>
 
       <article class="profile-card" id="profileCard">
-        <div class="profile-cover"></div>
         <div class="profile-body">
           <img src="https://github.com/m161awm2.png" alt="Ku Bonmu 프로필 이미지" />
           <span class="profile-label">GITHUB PROFILE</span>
@@ -58,7 +56,6 @@
       <div class="section-head"><h2>Interactive Node Graph</h2></div>
       <div class="network-preview" id="networkPreview">
         <canvas id="previewCanvas" aria-label="Velog 시리즈와 글을 연결한 인터랙티브 네트워크 그래프"></canvas>
-        <span class="network-title">Ku Bonmu · Network</span>
         <div class="network-detail" id="networkDetail" aria-live="polite">
           <b>Ku Bonmu</b><span>Velog Series</span><a href="#" target="_blank" rel="noreferrer" hidden>Velog에서 보기 ↗</a>
         </div>
@@ -78,21 +75,21 @@
     </section>
 
     <section class="wrap content-section" id="projects">
-      <div class="section-head"><h2>Projects</h2><p>GitHub 프로필에 고정해둔 프로젝트만 모았습니다.</p></div>
+      <div class="section-head"><h2>Projects</h2></div>
       <div class="card-grid" id="projectGrid"><p class="state">프로젝트를 불러오는 중입니다.</p></div>
     </section>
 
     <section class="wrap content-section" id="posts">
-      <div class="section-head"><h2>Velog Notes</h2><p>AWS, Linux, Backend를 공부하며 기록한 최근 글입니다.</p></div>
+      <div class="section-head"><h2>Velog Notes</h2></div>
       <div class="card-grid" id="postGrid"><p class="state">최근 글을 불러오는 중입니다.</p></div>
     </section>
 
     <section class="wrap content-section" id="links">
-      <div class="links-panel"><div class="section-head"><h2>Links</h2><p>운영 중인 서버와 학습 기록, 코드를 한곳에 모았습니다.</p></div><div class="links-list" id="linksList"></div></div>
+      <div class="links-panel"><div class="section-head"><h2>Links</h2></div><div class="links-list" id="linksList"></div></div>
     </section>
   </main>
 
   <footer><div class="wrap">© <span id="year"></span> Ku Bonmu. Built with AWS</div></footer>
-  <script src="assets/prism.js?v=20261025"></script>
+  <script src="assets/prism.js?v=20261112"></script>
 </body>
 </html>

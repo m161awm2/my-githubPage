@@ -3,12 +3,12 @@
   "title": "cloud.m161awm",
   "description": "Velog에 기록한 개발 학습 로그입니다.",
   "url": "https://velog.io/@m161awm",
-  "postCount": 40,
+  "postCount": 41,
   "totalLikes": 56,
   "latestPost": {
-    "title": "[Apache Kafka] Message to kafka #2",
-    "link": "https://velog.io/@m161awm/Apache-Kafka-Messages-to-Kafka-2",
-    "pubDate": "Mon, 09 Nov 2026 17:00:50 GMT"
+    "title": "[Apache Kafka] Java messages to Kafka #3",
+    "link": "https://velog.io/@m161awm/Apache-Kafka-Java-messages-to-Kafka-3",
+    "pubDate": "Mon, 16 Nov 2026 01:09:44 GMT"
   },
-  "updatedAt": "Mon, 09 Nov 2026 17:00:50 GMT"
+  "updatedAt": "Mon, 16 Nov 2026 01:09:44 GMT"
 }

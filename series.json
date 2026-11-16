@@ -33,6 +33,19 @@
           "빅데이터"
         ],
         "thumbnail": "https://velog.velcdn.com/images/m161awm/post/48605c8d-f2ae-4875-b051-30963efa9770/image.png"
+      },
+      {
+        "title": "[Apache Kafka] Java messages to Kafka #3",
+        "link": "https://velog.io/@m161awm/Apache-Kafka-Java-messages-to-Kafka-3",
+        "tags": [
+          "DE",
+          "Java",
+          "OS",
+          "kafka",
+          "network",
+          "빅데이터"
+        ],
+        "thumbnail": "https://velog.velcdn.com/images/m161awm/post/33fd697f-41d3-46bb-8ee0-0987ad4dff9a/image.png"
       }
     ]
   },

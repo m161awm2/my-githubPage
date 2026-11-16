@@ -15,7 +15,7 @@
         "thumbnail": "https://velog.velcdn.com/images/m161awm/post/9dccc29d-8a0a-46f1-90cc-5244ab23faef/image.png"
       },
       {
-        "title": "[Apache Kafka] Kafka Data Streaming #1",
+        "title": "[Apache Kafka] Kafka Data Streaming 1장",
         "link": "https://velog.io/@m161awm/Apache-Kafka",
         "tags": [
           "DE",
@@ -25,7 +25,7 @@
         "thumbnail": "https://velog.velcdn.com/images/m161awm/post/8bfd3d7f-07dd-4e30-bc33-beaf8d878ca1/image.png"
       },
       {
-        "title": "[Apache Kafka] Message to kafka #2",
+        "title": "[Apache Kafka] Message to kafka 2장",
         "link": "https://velog.io/@m161awm/Apache-Kafka-Messages-to-Kafka-2",
         "tags": [
           "DE",
@@ -35,8 +35,8 @@
         "thumbnail": "https://velog.velcdn.com/images/m161awm/post/48605c8d-f2ae-4875-b051-30963efa9770/image.png"
       },
       {
-        "title": "[Apache Kafka] Java messages to Kafka #3",
-        "link": "https://velog.io/@m161awm/Apache-Kafka-Java-messages-to-Kafka-3",
+        "title": "[Apache Kafka] Java messages to Kafka 3장",
+        "link": "https://velog.io/@m161awm/Apache-Kafka-Java-messages-to-Kafka-3%EC%9E%A5",
         "tags": [
           "DE",
           "Java",
@@ -45,7 +45,7 @@
           "network",
           "빅데이터"
         ],
-        "thumbnail": "https://velog.velcdn.com/images/m161awm/post/33fd697f-41d3-46bb-8ee0-0987ad4dff9a/image.png"
+        "thumbnail": ""
       }
     ]
   },

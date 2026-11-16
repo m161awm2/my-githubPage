@@ -1,10 +1,10 @@
 [
   {
     "title": "[Apache Kafka] Java messages to Kafka 3장",
-    "link": "https://velog.io/@m161awm/Apache-Kafka-Java-messages-to-Kafka-3%EC%9E%A5",
+    "link": "https://velog.io/@m161awm/Apache-Kafka-Java-messages-to-Kafka-3",
     "pubDate": "Mon, 16 Nov 2026 01:09:44 GMT",
-    "description": "서론 이번 글은 카프카 프로듀서를 제대로 사용하는 방법을 다룰 예정이다, java를 사용할 예정인데, 참고로 나는 2년전에 자바 기초 문법을 다뤄본적 있지만, 솔직히 말하자면 다 까먹었다. 다행히 자바는 C패밀리 언어에 속해서 다시 배운다면 빠르게 습득할수 있을것같다. 스프링부트도 곧 다룰 예정이라 많은 관심 바란다. 참고로 카프카는 자바/스칼라 언어...",
-    "thumbnail": "",
+    "description": "kafka-client를 활용하여 프로듀서를 만들고 메시지를 발신합니다",
+    "thumbnail": "https://velog.velcdn.com/images/m161awm/post/33fd697f-41d3-46bb-8ee0-0987ad4dff9a/image.png",
     "likes": 0
   },
   {

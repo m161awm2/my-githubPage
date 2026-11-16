@@ -36,7 +36,7 @@
       },
       {
         "title": "[Apache Kafka] Java messages to Kafka 3장",
-        "link": "https://velog.io/@m161awm/Apache-Kafka-Java-messages-to-Kafka-3%EC%9E%A5",
+        "link": "https://velog.io/@m161awm/Apache-Kafka-Java-messages-to-Kafka-3",
         "tags": [
           "DE",
           "Java",
@@ -45,7 +45,7 @@
           "network",
           "빅데이터"
         ],
-        "thumbnail": ""
+        "thumbnail": "https://velog.velcdn.com/images/m161awm/post/33fd697f-41d3-46bb-8ee0-0987ad4dff9a/image.png"
       }
     ]
   },
